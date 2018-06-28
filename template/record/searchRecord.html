@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+
+</head>
+<body>
+<div class="wrapper" id="searchRecord_searchObj">
+	<header class="header">
+		<p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">订单查询</h3>
+	</header>
+	<section class="centerWrap"  id="searchRecord_searchListObj">
+		<div class="inwrap mb8" data-k="period">
+			<p class="clearfix toptit">
+				<span class="fl">时间</span>
+			</p>
+			<div class="incon">
+				<p class="range_wrap w100">
+				<span class="range_time gray font12" id="searchRecord_timeTipsObj">三个月<em class="arrow_d statebg"></em></span>
+				<input type="range" min="0" max="25" value="25" id="searchRecord_timeObj" step="5">
+                <span class="rangeHack"></span>
+				</p>
+			</div>
+		</div>
+		<div class="inwrap mb8" data-k="buyType">
+			<p class="clearfix toptit">
+				<span class="fl">类型</span>
+			</p>
+			<p class="options clearfix">
+				<span data-t="data" data-k="buyType" data-v="alone">直 投</span>
+				<span data-t="data" data-k="buyType" data-v="plan">追 号</span>
+				<!-- <span data-t="data" data-k="buyType" data-v="consign">合 买</span>  -->
+			</p>
+		</div>
+        <div class="inwrap mb8" data-k="memotype" id="searchRecord_memoType" style="display:none">
+			<p class="clearfix toptit">
+				<span class="fl">备注类型</span>
+			</p>
+			<div class="box_5">
+                   <dl class="fl" data-t="flag" data-v="0" data-k="memotype">
+                     <dt><span class="icon_1 starGray"></span></dt>
+                     <dd><span class="checkbox_1"></span></dd>
+                   </dl>
+				   <dl class="fl" data-t="flag" data-v="1" data-k="memotype">
+                     <dt><span class="icon_1 starGreen"></span></dt>
+                     <dd><span class="checkbox_1"></span></dd>
+                   </dl>
+                   <dl class="fl" data-t="flag" data-v="2" data-k="memotype">
+                     <dt><span class="icon_1 starRed"></span></dt>
+                     <dd><span class="checkbox_1"></span></dd>
+                   </dl>
+                   <dl class="fl" data-t="flag" data-v="3" data-k="memotype">
+                     <dt><span class="icon_1 starBlue"></span></dt>
+                     <dd><span class="checkbox_1"></span></dd>
+                   </dl>
+                   <dl class="fl" data-t="flag" data-v="4" data-k="memotype">
+                     <dt><span class="icon_1 starPurple"></span></dt>
+                     <dd><span class="checkbox_1"></span></dd>
+                   </dl>
+			</div>
+		</div>
+		<div class="inwrap mb8" data-k="lotteryType">
+			<p class="clearfix toptit">
+				<span class="fl">彩种</span>
+			</p>
+			<p class="options opt4 clearfix">
+				<span data-t="data" data-k="lotteryType" data-v="SSQ">双色球</span>
+				<span data-t="data" data-k="lotteryType" data-v="DLT">大乐透</span>
+				<span data-t="data" data-k="lotteryType" data-v="FTFH">竞足</span>
+				<span data-t="data" data-k="lotteryType" data-v="SPF14">胜负彩</span>
+				<span data-t="data" data-k="lotteryType" data-v="SPF9">任选九</span>
+				<span data-t="data" data-k="lotteryType" data-v="D3">福彩3D</span>
+				<span data-t="data" data-k="lotteryType" data-v="PL3">排列三</span>
+				<span data-t="data" data-k="lotteryType" data-v="PL5">排列五</span>
+				<span data-t="data" data-k="lotteryType" data-v="JXK3">江西快3</span>
+				<span data-t="data" data-k="lotteryType" data-v="JLK3">吉林快3</span>
+				<span data-t="data" data-k="lotteryType" data-v="GD11X5">粤11选5</span>
+				<span data-t="data" data-k="lotteryType" data-v="GX11X5">桂11选5</span>
+			</p>
+		</div>
+		<div class="inwrap" data-k="type">
+			<p class="clearfix toptit">
+				<span class="fl">中奖</span>
+			</p>
+			<p class="options clearfix">
+				<span data-t="data" data-k="type" data-v="dkj">待开奖</span>
+				<span data-t="data" data-k="type" data-v="yzj">中 奖</span>
+				<span data-t="data" data-k="type" data-v="wzj">未中奖</span>
+			</p>
+		</div>
+        
+        <div class="inwrap" data-k="goodStatus">
+			<p class="clearfix toptit">
+				<span class="fl">交易</span>
+			</p>
+			<p class="options clearfix">
+				<span data-t="data" data-k="goodStatus" data-v="paying">等待付款</span>
+				<span data-t="data" data-k="goodStatus" data-v="printing">等待出票</span>
+				<span data-t="data" data-k="goodStatus" data-v="succ">出票成功</span>
+				<span data-t="data" data-k="goodStatus" data-v="part_succ">部分成功</span>
+				<span data-t="data" data-k="goodStatus" data-v="close">交易关闭</span>
+				<span data-t="data" data-k="goodStatus" data-v="print_fail">出票失败</span>
+			</p>
+		</div>
+		<div style="height:70px;"></div>
+	</section>
+	<div class="in_result">
+		<p class="center">
+			<!-- <a href="#" class="btn btn_big noresult">有0个订单符合条件</a> -->
+			<div class="bottomcon">
+				<div class="btnwrap center">
+					<a href="javascript:void(0);" data-t="sub" id="searchRecord_searchNumObj" class="btn btn_big">有N个订单符合条件</a>
+				</div>
+			</div>
+		</p>
+	</div>
+</div>
+</body>
+
+</html>

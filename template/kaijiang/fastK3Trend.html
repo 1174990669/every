@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>走势图-快3</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/lottery.css?v=3" />
+
+
+
+    <script>
+        //var lotteryPlay = 'HZ';
+    </script>
+
+
+</head>
+
+<body>
+<div class="wrapper" id="lotteryObj">
+    <section class="topfix k3trend">
+        <header class="header">
+            <p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+            <h3 class="head_cn"><span class="dlt_tit" data-t="showupdplay" id="playTitleObj"><em class="down"></em></span></h3>
+            <p class="head_rt"><span class="seticon icon" data-t="showSet"></span></p>
+        </header>
+        <div class="tzhu_style clearfix p3" id="updataPlayObj" style="display:none;">
+            <p data-t="updatelottery" data-v="HZ" data-cn="和值"><span class="botborder">和 值</span></p>
+            <p data-t="updatelottery" data-v="STHDX" data-cn="三同号"><span class="botborder">三同号</span></p>
+            <p data-t="updatelottery" data-v="ETH" data-cn="二同号"><span class="botborder">二同号</span></p>
+            <p data-t="updatelottery" data-v="SBT" data-cn="三不同"><span class="botborder">三不同</span></p>
+            <p data-t="updatelottery" data-v="EBT" data-cn="二不同"><span class="botborder">二不同</span></p>
+        </div>
+        <ul class="comtab trend_tab comtab2 clearfix">
+            <li class="on"  data-t="updateTrendName" data-v="DF"><span>基本走势</span></li>
+            <li data-t="updateTrendName" data-v="ST"><span id="chartTitle"></span></li>
+        </ul>
+        <div class="trend_top font12 whitebg">
+            <div class="trend_qh gray">
+                <span id="titleFirstObj" data-t="sortDom" data-k="title@0"></span>
+            </div>
+            <div class="numwrap" id="titleConObj">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div style="height:101px;"></div>
+        <!-- 走势 -->
+        <div class="trend_con gray font12">
+            <div class="trend_qh" id="listFirstObj">
+            </div>
+            <div class="numwrap" id="listConObj">
+            </div>
+        </div>
+        <!-- <div class="trend_info whitebg gray" id="explainObj" style="display:none;">
+        </div> -->
+    </section>
+    <div style="height:78px;"></div>
+    <section class="bottomcon" style="display:;">
+        <div class="trend_bet font12 whitebg">
+            <div class="trend_qh" id="betFirstObj">
+            </div>
+            <div class="numwrap" id="betConObj">
+            </div>
+
+        </div>
+        <div class="bet bor_top clearfix">
+            <p class="fl bet_lf" data-t="delAll"><a href="javascript:void(0);" class="btn_del"><span class="delicon icon"></span></a></p>
+            <p class="fl bet_mid" id="betMoneyObj" style="display:none;">
+                <span class="fontred">0</span>注 <span class="fontred">0</span>元
+            </p>
+            <p class="fl bet_mid" id="qhObj">
+                029期离截止<span class="fontred">19:00</span>
+            </p>
+            <p class="fr bet_rt" data-t="subData" id="subObj"><a href="javascript:void(0);" class="btn_buy">提 交</a></p>
+        </div>
+        <div class="overlayer" style="display:none;" id="setObj">
+            <div class="bottomcon">
+                <div class="trend_set">
+                    <h3 class="center mb10">走势设置</h3>
+                    <div class="setcon">
+                        <dl class="clearfix">
+                            <dt>期数</dt>
+                            <dd>
+                                <span data-t="updateData" data-v="num_30">近30期</span><span class="on" data-t="updateData" data-v="num_50">近50期</span><span data-t="updateData" data-v="num_100">近100期</span>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>遗漏</dt>
+                            <dd>
+                                <span class="on" data-t="updateData" data-v="showYL_show">显示</span><span data-t="updateData" data-v="showYL_hide">隐藏</span>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>统计</dt>
+                            <dd>
+                                <span class="on" data-t="updateData" data-v="statistics_show">显示</span><span  data-t="updateData" data-v="statistics_hide">隐藏</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <p class="btn_simple">
+                    <a href="javascript:void(0);" data-t="resSet" class="w50"><span class="first">取消</span></a><a href="javascript:void(0);" data-t="subSet" class="w50"><span>确定</span></a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+</div>
+</body>
+
+</html>

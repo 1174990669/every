@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css" />
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header">
+		<p class="head_lf" id="modifyBank_backObj"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">修改银行</h3>
+	</header>
+	<section class="centerWrap" >
+		<ul class="srh_con mb40">
+			<li class="act_box"><span class="font16">发卡银行：</span>
+			<input type="text" id="modifyBank_bankLIistObj_dummy" placeholder="点击选择银行">
+			<select id="modifyBank_bankLIistObj" style="display:none" class="dw-hsel" tabindex="-1">
+                 <optgroup label="发卡银行" id="modifyBank_cardWrap">
+                    </optgroup>
+            </select>
+			<em class="sel_arrow" id="modifyBank_showBankListObj"></em>
+			</li>
+			<li class="act_box" id="cityPickerCtrl">
+				<span class="font16">省份城市：</span>
+				<input type="text" readonly="readonly" placeholder="请输入省份城市" value="" class="w70">
+				<em class="sel_arrow" id="modifyBank_showBankListObj"></em>
+			</li>
+			<li class="act_box"><span class="font16">开户行名：</span><input type="text"  id="modifyBank_bankAddressObj" value=""></li>
+			<li class="act_box"><span class="font16">银行卡号：</span><input type="text"  id="modifyBank_bankCardNumObj" value=""></li>
+			<li class="act_box"><span class="font16">登录密码：</span><input type="password" placeholder="请输入登录密码" id="modifyBank_bankCardPwdObj" value=""></li>
+		</ul>
+		<p class="center mb35">
+			<a href="javascript:void(0);" id="modifyBank_submitObj" class="btn btn_big">确 定</a>
+		</p>
+	</section>
+	<div class="paybot">
+		<!--<p class="w94 mb20 gray font12">温馨提示<br/>
+		1. 不能使用信用卡，填写有效借记卡<br/>
+		2. 若有疑问请咨询在线服务
+		</p> -->
+	</div>
+	<div class="city-picker" id="cityPicker">
+		<div class="main">
+			<div class="hd" id="pickerHead">
+				<span>省份</span>-<span>城市</span>
+			</div>
+			<div class="bd" id="pickerBody">
+				<div class="item">
+					<select name="" id="province">
+					</select>
+				</div>
+				<div class="item">
+					<select name="" id="city">
+					</select>
+				</div>
+			</div>
+			<div class="ft">
+				<ul>
+					<li id="pickerCancel">取消</li>
+					<li id="pickerSubmit">确定</li>
+				</ul>
+			</div>
+		</div>
+		<div class="city-picker-cover"></div>
+	</div>
+</div>
+</body>
+
+</html>

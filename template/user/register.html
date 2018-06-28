@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+ 
+</head>
+<body>
+	
+<div class="wrapper r_wrapper" id="register_wrapperObj">
+	<header class="header r_header">
+		<p class="head_lf" data-t="back"><a href="javascript:void(0);" class="backicon icon"></a></p>
+		<h3 class="head_cn">用户注册</h3>
+	</header>
+	<section class="centerWrap" style="border-bottom: none;">
+		<ul class="srh_con mb40 r_input" id="ul-li">  <!-- id是添加的  alreadysend -->
+			<li class="act_box r_input_l">
+				<span class="img_box input_img"><img src="images/login/icon_login_user.png"/></span>
+                <input type="number" placeholder="请输入手机号码" value="" id="register_userName">
+			</li>
+			<li class="act_box r_input_l">
+				<span class="img_box input_img"><img src="images/login/icon_login_Captcha.png"/></span>
+				<input name="sms_code" type="number" placeholder="请输入短信验证码" value="" id="register_smsCode">
+				<span class="btn_yzm" data-t="updateMsg" id="register_updateMsg">获取短信验证码</span>
+				<!-- register_updateMsg -->
+			</li>
+            <li class="act_box r_input_l">
+            				<span class="mima img_box input_img"><img src="images/login/icon_login_password.png"/></span>
+                <input type="password" placeholder="密码请输入6-16位字母/数字" value=""  id="register_password">
+            			</li> 
+            			<li id="activ" class="act_box r_input_l">
+            				<span class="img_box input_img"><img src="images/login/icon_login_password.png"/></span>
+                <input type="password" placeholder="请确认密码" value=""  id="register_repwdDivObj">
+            			</li>
+		</ul>
+		<p class="center mb10">
+			<a style="border-radius: 40px;" href="javascript:void(0);" data-t="subReg" class="btn btn_big">注 册</a>
+		</p>
+		<p style="padding-top:10px;padding-left:3%;width:44%;float:left;" data-t="login">
+			<a style="border-radius: 40px; display: inline-block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);background:#bdc3c7;" class="btn btn_big wechat_btn" href="javascript:void(0);">登录</a>
+		</p>
+		<p style="padding-top:10px;width:50%;float:right;"> 
+            <a style="border-radius: 40px; display: inline-block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);" href="javascript:void(0);" id="login_wx" class="btn btn_big wechat_btn">微信快速登录</a>
+        </p>
+		<p style="padding-top:80px;" class="center mb35 r_deal" data-t="proto">
+			<label><em class="icon checkbox checked reg_yes"></em>我已阅读并同意<a data-t="proto" href="javascript:void(0)" class="fontblue">《旺旺中彩平台服务协议》</a></label>
+		</p>
+			
+	</section>
+</div>   
+</body>
+
+</html>

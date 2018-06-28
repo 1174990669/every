@@ -1,0 +1,399 @@
+@charset "utf-8";
+.opa4{ opacity: 0.4;}
+/*.log_bg{ background: #30a1f7;}*/ 
+.logo{text-align: center; margin-bottom: 40px;}
+.logo-aish{margin: 40px auto 40px;}
+.btn_gray{color: #bababa; border-color: #ccc;}
+
+.actli-rt{position: absolute; right: 10px;}
+.i-eye{ display: inline-block; width: 22px; height: 22px; background-position: 0 -1122px}
+.eyes-open .i-eye{background-position: 0 -1144px;}
+.invite-ewm .bewmicon-gray{display: inline-block; width: 22px; height: 22px; background-position: 0 -1166px;}
+/*登陆*/
+.login_con{ width: 100%;}
+.act_box{position: relative; width: 94%; /* margin-bottom: 20px; */ padding:13px 3%; height: 22px; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; background: #fff;}
+.act_box.mb0{margin-bottom: 0; border-bottom-color:transparent;}
+.act_box.focuson{border-color: #fcdd52;}
+/*.act_box.focus{border-color: #30a1f7;}*/
+.act_box dl{position: relative;}
+.act_box dt,.act_box dd{line-height: 22px;}
+.act_box dt{position: absolute; padding-right: 13px;}
+.act_box .act_input{margin-left: 30px;padding-left: 13px; border-left: 1px solid #ebebeb;}
+.act_box .act_input input{ width: 100%; font-size: 14px;}
+.act_box .user,.act_box .pwd,.act_box .tel{ display:inline-block; width: 22px; height: 22px;}
+.act_box .user{ background-position: 0 -198px;}
+.act_box .tel{ background-position: 0 -704px;}
+.act_box .pwd{ background-position: 0 -220px;}
+.act_box .pwd_dd{ padding-right: 60px;}
+.act_box input{background: #fff; width: 70%;}
+.act_box input.gray{color: #999;}
+.act_box > span{vertical-align: middle;}
+.act_box .mima{letter-spacing: 3.5px;}
+/*.pwd_tip{position: absolute; bottom: 30px; width: 100%;}*/
+.pwd_tip a{color: #999;}
+.qust_icon{display: inline-block; margin-right: 4px; width: 22px; height: 22px;background-position: 0px -462px; vertical-align: middle;}
+.login_btn{position: absolute; bottom: 30px; width: 100%; text-align:center;}
+
+/*注册*/
+.regpic{padding-top: 100px; margin-bottom: 20px; text-align: center;}
+.regpic img{ width: 50%;}
+.regtxt{margin-bottom: 40px; font-size: 14px; color: #999; text-align: center;}
+.zdicon{display: inline-block;position: relative; top: 6px; margin-right: 10px; width: 22px; height: 22px; background-position: 0px -506px;}
+/*查找站点*/
+.srh_con{width: 100%; /* padding-top: 40px; */}
+.srh_con.pt0{padding-top: 0;}
+.srh_con li{padding-left: 3%; padding-right: 3%; width: 94%;}
+#ul-li li {
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+.srh_con .sel_pos{position: relative; display: inline-block; width: 60%; height: 19px; line-height: 18px; overflow: hidden; vertical-align: middle;}
+.srh_con .sel_arrow{position: absolute; top:23px; right:14px; display: inline-block; width: 0px; height: 0px;border-bottom: 10px solid #999;  border-left: 10px solid transparent;}
+/*站点列表*/
+.sitetab{ margin-bottom: 20px;}
+.list_wrap{ width: 100%; overflow: hidden;}
+.sitelist{position: relative; padding: 0 3%;}
+.sitelist .slf{position: absolute; top: 6px;}
+.sitelist .srt{ margin-left: 22px;}
+.sitelist .dot{ display: block; width: 6px; height: 6px; background: #30a1f7; border-radius: 3px;}
+.sitelist .line{position: relative; left: 3px; display:block; width: 1px; height:500px; background: #30a1f7;}
+.sitelist .sbox{position: relative; padding: 13px; margin-bottom: 13px; background: #fff;}
+.sitelist .sbox .uparrow{ position: absolute;top: -4px; left: 4px; display: block; width: 0; height: 0; border-bottom: 4px solid #fff; border-left: 4px solid transparent; border-right: 4px solid transparent;}
+.sitelist .sbox .arrowbox{ display:block; position:absolute; top: 0; right:0px; width: 44px; height:75px; }
+.sitelist .sbox .rtarrow{position:absolute; top: 40%; right:10px; }
+/*站点地图*/
+.map{ width: 100%; height: 100%; overflow: hidden;}
+.map img{width: 100%;}
+.site_con{position: relative;}
+.site_info{ position: absolute; top: 8px; left: 0; width: 100%;z-index: 99;}
+.map_nav a{ line-height: 40px;}
+/*小额免密*/
+.xemm label{display: block; margin-bottom: 5px;}
+.xemm p{ padding-left: 26px;}
+/*资料管理*/
+.btn_yzm{position:absolute;top:4px;right:0;display:block;width:40%;height:40px; text-align: center;color: #fff; line-height: 40px;}
+.first_li{padding: 10px 3%;}
+.editbox{position: absolute; top: 0; right: 0; height: 48px; width: 44px; text-align: center;}
+.editbox .editicon{position: relative; top: 13px;}
+.verify_info{ margin-top: 100px; line-height: 2;}
+.vicon{ display: inline-block; width: 22px; height: 22px; margin-left: 14px; background-position: 0 -616px; vertical-align: middle;}
+.pic_yzm{ position: absolute; top: 0; right: 0; display:block; width: 40%; height: 48px; text-align: center;}
+.pic_yzm img{border:0; height: 48px; width: 100%;}
+/*注册送红包*/
+.active_hb{ background: #820018 url(../images/act_hbbg.png) no-repeat 0 0;background-size:100%;}
+.active_hb .header{position: absolute; top: 0; left: 0; background: none; z-index: 10;}
+.active_hb .banner{position: relative; z-index: 2; height: auto;}
+.active_hb .banner.act_bar01{ margin-bottom: -25px;}
+.active_hb .banner.act_bar01 img{ padding-top:34px; width: 100%; max-width: 320px; max-height: 321px;}
+.active_hb .banner.act_bar02 img{ padding-top: 10px; margin-bottom: 5px; width: 100%; max-width: 320px; max-height: 228px;}
+.active_hb .banner.act_bar01 .act_btn{position: absolute; top: 264px; left: 50%; margin-left: -67px;}
+.active_hb .act_btn{display:inline-block; width:135px; height: 49px;font: bold 20px "MicrosoftYahei"; color: #900018; text-align: center; line-height: 48px;  background:url(../images/act_btn.png) no-repeat 0 0;background-size: 135px 49px;}
+.active_hb .act_time{ position:absolute; top: 200px;width: 100%; text-align: center; font-size: 9px; color: #fff;}
+.active_hb .banner .link{color: #fffbf0;}
+.active_rule{position: relative;width: 94%; padding:15px 3%; background: rgba(86,0,16,.5); color: #fffefe;}
+.active_rule p{font-size: 13px; line-height: 20px;}
+
+/*new register*/
+.tzh-arrow{position: absolute;right: 0;top: 0; width: 44px; height: 50px;}
+.tzh-arrow .arrow{ position: absolute; right: 15px; top: 20px;}
+
+/*客服页面修改*/
+.parent{background: #fff}
+.parent .parent-code{ height: 100px; float: left;}
+.parent .parent-code img{width: 70px; margin: 15px; box-sizing: border-box;}
+.parent .parent-way{margin-left: 100px; height: 100px;}
+.parent .parent-way .way1{padding: 0; line-height: 50px; width: 100%; }
+.parent .parent-way .way2{line-height: 25px; padding: 0;vertical-align: center; padding-right: 15px;}
+.parent .way1{display: flex; display: -webkit-flex; border-bottom: 1px solid #ebebeb;}
+.parent .way1 a{ flex: 1;}
+.parent .way1 a .icon{ display: inline-block; margin-right: 10px; width: 22px;height: 22px; vertical-align: middle;}
+.parent .way2 .way2-wenzi{	overflow: hidden;text-overflow: ellipsis;white-space: pre-wrap; margin-left: 15px; display: block;}
+.parent .way2 .km{float: right; margin-right: 10px;}
+
+.opt-tzh{ margin-top: -20px;  height: 50px;line-height: 50px; }
+.opt-tzh .icon{ display: inline-block; margin-right: 10px; width: 22px;height: 22px; vertical-align: middle;}
+.opt-tzh a{display: block; float: left; width:50%; text-align: center;}
+.opt2 a span{ border-right: 1px solid #ebebeb;  background-color: #fff;}
+.opt-tzh a span{display: block; }
+.opt-tzh a:last-child span{border-right: 0;}
+
+
+
+.reg-box{margin-top: 100px;}
+.reg-box .tipicon{position: relative; top: 7px; display: inline-block; margin-right: 10px; width: 25px; height: 25px;}
+.reg-box .err_icon{ background-position: 0px 0px; }
+.reg-box .suc_icon{ background-position: 0px -25px;}
+/*new site*/
+.telicon{display:inline-block; width: 22px; height: 22px;}
+.nearby-site{position: relative; left: -8px; top:4px; display: block; width: 22px; height: 22px; background-position: 0 -902px;}
+.sitelist .sbox{padding:0;}
+.sitelist .sbox .arrowbox{width: 38px; height: 72px; border-left: 1px solid #ebebeb;}
+.sitelist .sbox .telicon{position: absolute; top: 24px; right: 7px;}
+.sitelist .sbox .bindicon{position: absolute; top: 24px; right: 7px; display: inline-block;width: 22px;height: 22px; vertical-align: middle;}
+.txt-elps p{ overflow: hidden; text-overflow:ellipsis; display: -webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+.sbox-new .site-name,.sbox-new .site-add{ display: inline-block; width: 15px; height: 15px; vertical-align: middle; margin-right:5px;}
+.site-name{ background-position: -4px -928px;}
+.site-add{ background-position: -4px -951px;}
+.sitelist .sbox-new{padding: 10px 48px 13px 10px;}
+.site_box .sbox-map{ padding-right:10px; margin-right: 20px; border-right: 1px solid #ebebeb;}
+.site_box .arrowbox{ position: absolute;top: 0; right: 0; display: block; width:38px; height: 100%;}
+.site_box .arrowbox .telicon{position: absolute; top: 31px; right: 7px;}
+
+.sinfo-new .site_box{margin: 0;}
+.sinfo-new .opt-tzh{position: relative; margin-top: 0; border-top: 1px solid #ebebeb; z-index: 2;}
+.info-txt{padding: 0 3%; color: #666;}
+
+.zd-ewm{width: 50px; height: 50px; margin-top: 5px;}
+.zd-ewm img{ width: 100%;}
+.fontyellow{color: #fcdd52;}
+.zdinfo-new{width: 75%;width: -webkit-calc(100% - 60px);width: -moz-calc(100% - 60px); width: calc(100% - 60px);line-height: 1.8;}
+
+.coupon-wrap{width: 100%; height: 69px; overflow-x:scroll;}
+.coupon-wrap::-webkit-scrollbar{width: 0;height: 0;}
+.cps{background: url(../images/coupon.png) no-repeat 0 0; background-size: 120px 207px;}
+.coupons{height: 69px;}
+.coupons li{position: relative; float: left; width: 120px; height:69px;}
+.c-item .cps-txt{width: 85px; padding:15px 0 0 5px; color: #fff;}
+.c-item .cps-rt{position: absolute; right: 0;top: 0;margin-top:6px; width: 24px; line-height: 14px; letter-spacing: .5em; text-align: center;color: #fff;}
+.c-item.cps-s1{ background-position: 0 -69px;}
+.c-item.cps-s2{ background-position: 0 -138px;}
+.c-item.got{ background-position: 0 0;}
+.c-item.got .cps-txt,.c-item.got .cps-rt{color: #999;}
+.c-item.got .cps-rt{margin-top: 14px;}
+
+.newtop{ position: absolute;top: 0; left: 0;background: transparent; z-index: 10;}
+/*banner*/
+.banner{position: relative; width: 100%; height: 184px; overflow: hidden;}
+.banner_scroll{ width: 100%; height: 100%;position:absolute;}
+.banner_scroll li{ width: 100%;height:100%; position: absolute;}
+.banner_scroll li img{width: 100%;}
+.page_total{position: absolute; right: 5px; bottom: 5px;padding:1px 5px; color: #fff; background: rgba(0,0,0,.5);}
+
+.share-bot .paybot a{height: 40px; line-height: 40px;}
+#shareObj{padding: 10px 0;border-bottom: 1px solid #ebebeb;}
+#shareObj a{width: 25%;float: left; height: 41px; line-height: 41px; background: url(../images/share.png) no-repeat center 0; background-size: 41px 164px; margin: 0;}
+#shareObj .bds_weixin{background-position: center 0;}
+#shareObj .bds_tsina{background-position: center -41px;}
+#shareObj .bds_sqq{background-position: center -82px;}
+#shareObj .bds_qzone{background-position: center -123px;}
+
+/*管理站点*/
+.act_area{width: 94%; height: 100px; padding: 10px 3%; border: none; border-top: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb; line-height: 1.5;}
+.manageImg{padding-left: 3%;}
+.manageImg .m-img{position: relative; width: 46%; height: 70px; float: left; margin-right: 4%;margin-bottom: 10px;}
+.manageImg .m-img img{ width: 100%; height: 100%; border: 1px solid #ebebeb;}
+.manageImg .img-add{display: block; height: 100%; width: 100%;border: 1px solid #ebebeb; text-align: center; line-height: 70px; background: #fff;}
+.manageImg .img-del{position: absolute;bottom: 0;left: 1px; width: 100%; height: 20px; line-height: 20px; background: rgba(0,0,0,.5); color: #fff; text-align: center;}
+.manageImg .del-sm{margin-right: 5px;}
+
+/*实名认证*/
+.radiobox{position: relative; padding-left: 25px;}
+.radiobox .icon{position: absolute;left: 0;top: 0; display:block;width: 22px; height: 22px; background-position: 0 -1188px;}
+.radiobox.selected .icon{background-position: 0 -1210px;}
+
+.paper-box{padding: 15px 5%; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; background: #fff;}
+.paper-box .paper-item{ width: 33.3333%; text-align: center;}
+.paper-box .paper-img{position:relative; display: inline-block; margin-bottom: 10px; width: 80%; border:1px solid #ebebeb;}
+.paper-box .paper-img > img{width: 100%;}
+.paper-box .paper-add{position: absolute; top: 50%; left: 50%; margin: -12px 0 0 -12px; font-size: 30px; font-weight: bold; color: #666; z-index: 3; width: 24px; height: 24px;text-align: center; line-height: 20px;}
+
+.info-area{ padding: 10px 3% 5px; margin-bottom: 20px; width: 94%; background: #fff; border-bottom: 1px solid #ebebeb;border-top: 1px solid #ebebeb;}
+.info-area textarea{width: 100%; border: 0;height: 100px; line-height: 1.5;}
+
+
+/*银行卡绑定，选择地址*/
+.city-picker{
+	opacity: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.city-picker-cover{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+}
+
+.city-picker .main{
+	position: absolute;
+	width: 100%;
+	height: 320px;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+	background: #fff;
+	transition:  all ease .3s;
+	transform: translateY(100%);
+}
+.city-picker.show{
+	opacity: 1;
+}
+.city-picker.show .city-picker-cover{
+	display: block;
+}
+.city-picker.show .main{
+	transform: translateY(0);
+}
+/*页头*/
+.city-picker .hd{
+	position: relative;
+	z-index: 1;
+	padding: 0 10px;
+}
+.city-picker .hd span{
+	height: 44px;
+	line-height: 44px;
+	padding: 0 5px;
+	position: relative;
+	text-align: center;
+}
+.city-picker .bd{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 30px 0 40px;
+	height: 100%;
+	width: 400%;
+	box-sizing: border-box;
+	transition:  all ease .3s;
+}
+.city-picker .bd .item{
+	float: left;
+	position: relative;
+	width: 25%;
+	height: 100%;
+	overflow: hidden;
+}
+.city-picker .bd .item input[type='text'],.city-picker .bd .item select{
+	position: absolute;
+	visibility: hidden;
+}
+.city-picker .bd .item .dwc ,.city-picker .bd .item .dw-inline .dw{
+	display: block;
+}
+.city-picker .bd .item .dw-inline .dw .dwwr{
+	background: #fff;
+}
+.city-picker .bd .item .dw-i{
+	font-size: 16px;
+}
+.city-picker .ft{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #30a1f7;
+}
+.city-picker .ft li{
+	float: left;
+	width: 50%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #30a1f7;
+	font-size: 16px;
+}
+.city-picker .ft li:nth-child(1){
+	border-right: 1px solid #30a1f7;
+}
+
+.logins {display:flex;  justify-content:center;  align-items:center;}
+
+.loginst>div{padding: 0 30px}
+
+.logins img {height: 60px; width: 60px; display: block}
+.logins a {font-size: 12px; color: #999}
+
+
+/*修改登录注册*/
+.r_input{
+	/*background-color: #fff;*/
+	/*border: 1px solid #cdcdcd;*/
+	width: 90% ;
+	margin: 10% 5% 6.25%;
+	padding-top: 0 ;
+}
+.r_input_l{
+	margin-bottom: 0 ;
+	height: 7% ;
+	border-top: none;
+}
+.input_img{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+	overflow: visible;
+}
+.r_input_l input{
+	font-size: 14px;
+	line-height: 20px;
+}
+.l_pwd{
+	border-left: none !important;
+	padding-left: 0 !important;
+}
+.l_pwd input{
+	font-size: 14px;
+	line-height: 20px;
+	
+}
+.btn_yzm{
+	background-color: #fff;
+	color: #333;
+	background: url(../images/login/li_1.png) no-repeat;
+	background-size: 2px;
+	background-position: left center; 
+}
+.r_login{
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 15px;
+	margin-bottom: 35px;
+	display: inline-block;
+}
+.r_login a{
+	color: #ff7463;
+}
+.r_deal{
+	font-size: 10px;
+}
+.wechat_btn{
+	background-color: #22ad38;
+	color: #fff;
+}
+.wechat_btn:active{
+	background: #489e42;
+}
+.btn_login{
+	color: #fff;
+	background-color: #31a1f7;
+}
+.btn_login:active{
+	background: #1e87d7;
+}
+.l_switch .l_block{
+	background: none;
+	width: 36px;
+}
+.l_switch .move{
+	transform: none;
+	-webkit-transform: none;
+}
+.l_switch .off{
+	left: 0;
+}
+.l_on, .l_off{
+	width: 30px;
+}
+.l_switch{
+	border: none;
+}
+.wechat_logo{
+	
+}

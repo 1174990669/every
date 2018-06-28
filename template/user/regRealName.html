@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+</head>
+
+<body>
+<div class="wrapper centerWrap" id="regRealName_wrap">
+	<header class="header">
+		<p class="head_lf" id="regRealName_back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">实名认证</h3>
+		<p class="head_rt" id="regRealName_tgObj" style="display:none"><span>跳过</span></p>
+	</header>
+	<section>
+		<ul class="">
+        	<li class="act_box" id="regRealName_cardType" style="border-bottom: 6px solid #eee;">
+                <span class="font16">证件类型：</span>
+                <label class="radiobox selected mr20 font16" data-v="id_card"><em class="icon"></em>身份证</label>
+                <label class="radiobox font16" data-v="passport"><em class="icon"></em>护照</label>
+            </li>
+			<li class="act_box">
+				<span class="font16">真实姓名：</span><input type="text" placeholder="请输入真实姓名" value="" id="regRealName_nameObj">
+			</li>
+			<li class="act_box">
+				<span class="font16">证件号码：</span><input type="text" placeholder="请输入证件号码" value="" id="regRealName_ucodeObj">
+			</li>
+		</ul>
+        <!--<div class="paper-box clearfix mb20 manageImg">
+          <div class="paper-item fl" data-v="1" id="regRealName_img_1">
+
+                 <div class="paper-img js_upload_1" style="display:none">
+                    	<img src="">
+          				<span class="img-del font12" data-t="del" data-v="1"><em class="icon-sm del-sm"></em>删除</span>
+                 </div>
+                 <div class="paper-img js_upload_2 " data-t="img" data-v="card">
+                 		<img id="regRealName_pic_1" src="images/z1.png">
+                		<span class="paper-add">+</span>
+				 </div>
+
+                 <p id="regRealName_picDesc_1">证件正面</p>
+          </div>
+          <div class="paper-item fl" data-v="2" id="regRealName_img_2">
+                 <div class="paper-img js_upload_1" style="display:none">
+                    	<img src="">
+          				<span class="img-del font12" data-t="del" data-v="2"><em class="icon-sm del-sm"></em>删除</span>
+                 </div>
+                 <div class="paper-img js_upload_2 " data-t="img" data-v="card">
+                 		<img id="regRealName_pic_2" src="images/z2.png">
+                		<span class="paper-add">+</span>
+				 </div>
+                <p id="regRealName_picDesc_2">证件反面</p>
+          </div>
+          <div class="paper-item fl" data-v="3" id="regRealName_img_3">
+                 <div class="paper-img js_upload_1" style="display:none">
+                    	<img src="">
+          				<span class="img-del font12" data-t="del" data-v="3"><em class="icon-sm del-sm"></em>删除</span>
+                 </div>
+                 <div class="paper-img js_upload_2 " data-t="img" data-v="photo">
+                 		<img id="regRealName_pic_3" src="images/z3.png">
+                		<span class="paper-add">+</span>
+				 </div>
+                 <p id="regRealName_picDesc_3">手持证件</p>
+          </div>
+        </div>-->
+        <div class="paybot">
+			<p style="padding-top:10px;" class="w94 mb20 gray font12">温馨提示<br>
+			1. 实名信息为中奖，提现唯一标识<br>
+            2. 审核时间为3个工作日，一经提交不可更改
+			<!-- 2. 若有疑问请咨询在线服务 -->
+			</p>
+		</div>
+		<p class="center mb20">
+			<a href="javascript:void(0);" id="regRealName_subObj" class="btn btn_big">确 定</a>
+		</p>
+		<!-- <div class="paybot">
+			<p class="w94 mb20 gray font12">温馨提示<br>
+			1. 实名信息为中奖，提现唯一标识<br>
+		            2. 审核时间为3个工作日，一经提交不可更改
+			2. 若有疑问请咨询在线服务
+			</p>
+		</div> -->
+	</section>
+	<div class="overlayer" style="display:none;" id="regRealName_tip">
+		<div class="bottomcon">
+			<div class="playtip">
+				<h3>提 示</h3>
+				<p class="font14 ">真实姓名：<span id="regRealName_name2"></span></p>
+				<p class="font14 ">证件号码：<span id="regRealName_id2"></span></p>
+			</div>
+			<p class="btn_simple">
+				<a href="javascript:void(0)" class="w50" data-t="clearTip"><span class="first">取消</span></a><a href="javascript:void(0)" class="w50" data-t="confirmTip"><span>确定</span></a>
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
+
+

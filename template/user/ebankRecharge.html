@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>网银充值</title>
+
+</head>
+
+<body>
+<div class="wrapper" id="ebankRecharge_wrapObj">
+	<header class="header">
+		<p class="head_lf"><span class="backicon icon" id="ebankRecharge_backObj"></span></p>
+		<h3 class="head_cn">网银充值</h3>
+	</header>
+	<section class="centerWrap" >
+		<div class="paylist listop">
+			<dl class="clearfix" data-t="mybank">
+				<dt><span class="bankpay payicon"></span></dt>
+				<dd>
+					<p class="font16">招商银行</p>
+					<p class="font12 gray">尾号1536 储蓄卡</p>
+					<span class="arrowbox"><em class="rtarrow icon"></em></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="w94 paytop"><h3 class="font16">充值账户：某某某</h3></div>
+		<p class="w94 payinput font16 focus">
+			充值金额：<span class="fontblue font14" id="ebankRecharge_moneyObj">10元</span>
+			<span class="editbox" data-t="showkey"><em class="editicon icon"></em></span>
+		</p>
+		<div class="m_wrap">
+			<p class="miane w94 mb20 clearfix">
+				<span class="selected" data-t="setMoney" data-v="10">10元</span><span data-t="setMoney" data-v="20">20元</span><span data-v="50" data-t="setMoney">50元</span><span data-t="setMoney" data-v="100">100元</span><span data-v="500" data-t="setMoney">500元</span>
+			</p>
+			<p class="center"><a href="javascript:void(0)" class="btn btn_big" data-t="sub">确 定</a></p>
+		</div>
+	</section>
+	<div class="paybot">
+		<p class="w94 mb20 gray font12">温馨提示<br/>
+		1. 充值金额最小1元，最大取决于您的网银<br/>
+		2. 提交充值将进入支付宝，完成后自动返回<br/>
+		<!--3. 若有疑问可随时咨询客服400-968-3766 -->
+		</p>
+	</div>
+	<div class="tip_con" style="display:none;">
+		<div class="tip_box">
+			<span class="tipicon err_icon"></span>充值失败，请重新充值
+		</div>
+	</div>
+	<div class="bottomcon">
+		<div class="keyboard key3" style="display:none;" id="ebankRecharge_keyObj">
+			<ul>
+				<li>
+					<span data-t="key" data-v="1"><em>1</em></span>
+					<span data-t="key" data-v="2"><em>2</em></span>
+					<span data-t="key" data-v="3"><em>3</em></span>
+				</li>
+				<li>
+					<span data-t="key" data-v="4"><em>4</em></span>
+					<span data-t="key" data-v="5"><em>5</em></span>
+					<span data-t="key" data-v="6"><em>6</em></span>
+				</li>
+				<li>
+					<span data-t="key" data-v="7"><em>7</em></span>
+					<span data-t="key" data-v="8"><em>8</em></span>
+					<span data-t="key" data-v="9"><em>9</em></span>
+				</li>
+				<li>
+					<span data-t="delkey"><em class="font18">←</em></span>
+					<span data-t="key" data-v="0"><em>0</em></span>
+					<span data-t="hidekey"><em class="fontblue">确定</em></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

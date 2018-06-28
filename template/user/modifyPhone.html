@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<p class="head_lf" id="modifyPhone_backObj"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">修改手机</h3>
+	</header>
+	<section class="centerWrap" >
+		<ul class="mb40">
+			<li class="first_li font16">当前手机号码：<span id="modifyPhone_nowPhone"></span> </li>
+			<li class="act_box">
+				<span class="font16">旧手机：</span><input type="number" placeholder="请输入已绑定手机号" id="modifyPhone_oldTelObj" value="">
+			</li>
+			<li class="act_box">
+				<span class="font16">新手机：</span><input type="number" placeholder="请输入新修改手机号" id="modifyPhone_newTelObj" value="">
+			</li>
+			<li class="act_box">
+				<input type="number" placeholder="请输入验证码" id="modifyPhone_checkCodeObj" value="">
+				<span style="background:#ff5024;color:#fff;border-radius:30px; " class="btn_yzm" id="modifyPhone_getCodeObj">获取短信验证码</span>
+			</li>
+		</ul>
+		<p class="center mb35">
+			<a href="javascript:void(0);" id="modifyPhone_submitObj" class="btn btn_big">确 定</a>
+		</p>
+	</section>
+	<div class="paybot">
+		<p class="w94 mb20 gray font12">温馨提示<br/>
+		1. 验证码免费获取，请勿频繁点击<br/>
+		2. 若有疑问请咨询在线服务 
+		</p>
+	</div>
+</div>
+</body>
+
+</html>

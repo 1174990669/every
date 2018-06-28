@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>支付确认</title>
+<link rel="stylesheet" href="css/global.css" />
+</head>
+
+<body>
+<div class="wrapper" id="buyConfirm_wrapObj">
+	<header class="header">
+		<p class="head_lf" data-t="backbtn"><span class="backicon icon" ></span></p>
+		<h3 class="head_cn">支付确认</h3>
+	</header>
+	<section class="centerWrap" >
+		<div class="w94 paytop mb8">
+	        <div class="buyConfirm_money clearfix" id="buyConfirm_MoneyObj">
+	        	<!--<span class="buyConfirm_tzmoney font16 fl">投注金额 : <em id="buyConfirm_betMoneyObj" class="fontred"></em></span>
+	            <span class="fr gray font12" id="buyConfirm_betInfo"></span>-->
+	        </div>
+		</div>
+		<div id="buyConfirm_initShadow" class="buyConfirm_initShadow mb8">
+			<span>正在加载支付方式……</span>
+		</div>
+		<div  id="buyConfirm_initCon" class="pay_confirm mb8" style="display: none">
+            <div class="handsel">
+				<p class="clearfix" data-t="showhb">
+					<span class="fl font16">红包抵扣</span>
+					<span class="fr"><em id="buyConfirm_hbObj">0元</em><em class="arrow"></em></span>
+				</p>
+				<div class="handsel_list" style="display:none;" id="buyConfirm_hbListWrap">
+				
+				</div>
+			</div>
+			<div class="handsel" >
+				<p class="clearfix">
+					<span class="fl font16">彩金抵扣</span>
+					<span class="fr"><em id="buyConfirm_cjObj">0元</em></span>
+				</p>
+			</div>
+			<div class="clearfix">
+				<span class="fl font16">余额抵扣</span>
+				<span class="fr" id="buyConfirm_yeObj">0元</span>
+			</div>
+			<div class="clearfix">
+				<span class="fl font16">还需支付</span>
+				<span class="fr fontred" id="buyConfirm_payObj">0元</span>
+			</div>
+		</div>
+        <div class="mb15" >
+			<p id="buyConfirm_pwdWrap" class="w94 payinput font16 whitebg"  style="display:none">
+				登录密码：<input id="buyConfirm_pwdObj" type="password" placeholder="请输入登录密码" class="w70 whitebg" />
+			</p>
+			<p id="buyConfirm_nopwdWrap" class="w94 payinput noborder font12 clearfix"   style="display:none">
+				<label class="fl"><em id="buyConfirm_pwdCheck" class="icon checkbox" data-t="hidePwd"></em>小额免密</label>
+				<span class="fr gray">单日投注金额不超200元免密</span>
+			</p>
+		</div>
+		<div class="others mb20" id="buyConfirm_payTypeObj">
+			<p class="w94 gray mb15">选择支付方式</p>
+			<div class="paylist" id="buyConfirm_paytypeList">
+				
+			</div>
+		</div>
+		<p class="center mb20"  ><a  href="javascript:void(0);" class="btn btn_big" data-t="sub"><span id="buyConfirm_payTipsObj">确认支付<span></a></p>
+		<p id="hemai_options" class="hemai_options" style="display: none;">温馨提示：合买金额不能使用红包或优惠券。</p>
+	</section>
+    <div class="overlayer" style="display:none" id="buyConfirm_hideTipsObj" data-t="hideTips">
+		<div class="bottomcon" data-t="nohide">
+			<div class="playtip">
+				<h3>支付提示</h3>
+				<p class="font14 center">如需继续支付请刷新重试 </p>
+			</div>
+			<p class="btn_simple">
+				<a href="javascript:void(0);" data-t="clearTips" class="w50"><span class="first">取消</span></a><a href="javascript:void(0);" data-t="subTips" class="w50"><span>刷新</span></a>
+			</p>
+		</div>
+	</div>
+    
+    
+    <div class="overlayer" style="display:none" id="buyConfirm_authTipsObj" data-t="hideTips">
+        <div class="bottomcon" data-t="nohide">
+            <div class="playtip">
+                <h3>提示</h3>
+                <p class="font14 center">请完善实名认证,才可以继续操作! </p>
+            </div>
+            <p class="btn_simple">
+                <a href="javascript:void(0);" data-t="clearAuthTips" class="w50"><span class="first">取消</span></a><a href="javascript:void(0);" data-t="toAuthTips" class="w50"><span>确定</span></a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

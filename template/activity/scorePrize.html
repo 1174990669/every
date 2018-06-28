@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+</head>
+<body>
+<div class="wrapper" id="scorePrize_wrapperObj">
+	<header class="header">
+		<p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn " id="scorePrize_title">
+			<span>积分抽奖</span>
+			<span class="font12" id="scorePrize_chance" style="display:none">次机会</span>
+		</h3>
+        <p class="head_rt"><a href="javascript:void(0)" data-t="share"><span class="shareicon icon" id="scorePrize_share"></span></a></p>
+	</header>
+	<section class="centerWrap">
+        <p class="loading_1" id="scorePrize_loading"></p>
+		<div class="g-lottery" id="scorePrize_content" style="display:none">
+			
+            <div class="g-bg-top">
+				<img src="images/activity/g-bg-top.png">
+				<a href="javascript:void(0)" class="myprize" data-t="myPrize">我的<br />奖品</a>
+			</div>
+			<div class="turntable">
+				<div class="g-prize"  id="scorePrize_circle">
+                	<!--<p class="g-pos g1">
+						<span>红酒一瓶</span>
+						<span>一等奖</span>
+					</p>
+					<p class="g-pos g2">
+						<span>1000积分</span>
+						<span>二等奖</span>
+					</p>
+					<p class="g-pos g3">
+						<span>500积分</span>
+						<span>三等奖</span>
+					</p>
+					<p class="g-pos g4">
+						<span>100积分</span>
+						<span>四等奖</span>
+					</p>
+					<p class="g-pos g5">
+						<span>50积分</span>
+						<span>五等奖</span>
+					</p>
+					<p class="g-pos g6">
+						<em>谢谢参与</em>
+					</p>-->
+                </div>
+				<a href="javascript:void(0);" class="g-arrow" data-t="start" id="scorePrize_btn"></a>
+			</div>
+			<div class="g-box prize-box">
+				<div class="tit">中奖用户</div>
+				<div class="font12 winner-list" id="scorePrize_box">
+					<ul id="scorePrize_list1">
+			<!--			<li>恭喜<span class="winner-name">金正恩</span>获一等奖5000积分</li>
+						<li>恭喜<span class="winner-name">正恩</span>获三等奖500积分</li>
+						<li>恭喜<span class="winner-name">金金正恩</span>获五等奖50积分</li>-->
+					</ul>
+                    <ul id="scorePrize_list2">
+                    </ul>
+				</div>
+			</div>
+			<div class="g-box rule-box">
+				<div class="tit">抽奖规则</div>
+				<div class="font12" id="scorePrize_rules">
+					1、首次安装APP并登录即可获得免费抽奖机会；<br />
+					2、100积分可抽奖一次；<br />
+					3、中奖积分会自动存入到您的积分账户；<br />
+					4、实物奖品需要登记详细地址；<br />
+					5、活动时间：2016年8月1日至2017年8月1日；<br />
+					6、活动解释权归旺旺中彩所有，一旦发现作弊将取消领奖资格。
+				</div>
+			</div>
+            <div class="g-bg-bot">
+				<img src="images/activity/g-bg-bot.png">
+			</div>
+		</div>
+	</section>
+	
+	<!--一等奖-->
+	<div class="overlayer"  id="scorePrize_alertTip" style="display:none">
+		<!--<div class="tckwrap">
+			<div class="tckbox winbox">
+				<span class="close">×</span>
+				<div class="tit">
+					<p>中奖啦 !</p>
+				</div>
+				<div class="tckcon center">
+					<div class="coupon-box mb10">
+						<span class="cop1">一等奖</span>
+						<span class="cop2">红酒1瓶</span>
+					</div>
+					<p class="gray mb10 font12">已放入【我的奖品】</p>
+					<a href="javascript:void(0);" class="btn btn_big sm">马上领取</a>
+				</div>
+			</div>
+		</div>-->
+	</div>
+	
+	<!--积分不足-->
+	<div class="overlayer" style="display:none;">
+		<!--<div class="tckwrap">
+			<div class="tckbox">
+				<span class="close">×</span>
+				<div class="tckcon center">
+					<p>积分余额不足！无法抽奖</p>
+					<p style="display:none;">抽奖活动已结束！</p>
+					<div class="waybox font12">
+						<p class="tit">赚取积分方法：</p>
+						<p>
+							1、每天登录APP奖励积分<br />
+							2、连续7天登录会额外奖励积分<br />
+							3、分享活动页面奖励积分
+						</p>
+					</div>
+					<a href="javascript:void(0);" class="btn btn_big sm">知道啦</a>
+				</div>
+			</div>
+		</div>-->
+	</div>
+</div>
+</body>
+
+</html>

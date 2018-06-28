@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<p class="head_lf" id="ticketCashier_backbtn"><a href="javascript:void(0)"><span class="backicon icon"></span></a></p>
+		<h3 class="head_cn" id="ticketCashier_topTit">支付扣款</h3>
+	</header>
+    
+    <section class="centerWrap"  style="display:none" id="ticketCashier_progressEnd">
+    	<div class="circle center circle_succeed">
+			<div class="outer">
+				<div class="inner">
+					<p class="state2">
+						<span class="succeed statebg">扣款成功</span>
+					</p>
+				</div>
+			</div>
+		</div>
+    </section>
+    
+	<section class="centerWrap"  id="ticketCashier_progressCon">
+		<div class="circle center">
+			<div class="outer" >
+				<div class="inner">
+					<p class="state1 pt25">
+						<span>正在付款</span>
+						<span class="font12"></span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--<h2 style="font-size:18px;text-align:center">豪中彩</h2> -->
+        <p class="center" id="ticketCashier_btnCon">
+        	<a href="javascript:void(0)" class="btn btn_big" id="ticketCashier_refreshBtn" style="display:none">刷新进度</a>
+            <a href="javascript:void(0)" class="btn btn_big" id="ticketCashier_tryBtn" style="display:none">继续付款</a>
+        </p>
+	</section>
+    
+	
+	<div class="nav_bot" id="ticketCashier_botLink" style="display:none">
+		<a id="ticketCashier_record" href="javascript:void(0)" style="width:49%">订单记录</a>
+        <a id="ticketCashier_home" href="javascript:void(0)" style="width:49%">继续订票</a>
+	</div>	
+	
+</div>
+</body>

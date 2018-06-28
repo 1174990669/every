@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+</head>
+<body>
+<div class="wrapper" id="prizeNotify_wrapperObj">
+	<header class="header">
+		<p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">开奖定制</h3>
+	</header>
+    <p class="loading_1" id="prizeNotify_load"></p>
+	<section class="centerWrap" id="prizeNotify_total" style="display:none">
+        <div style="display:none">  <!-- 暂时隐藏中奖通知 -->
+		<ul class="info_list">
+			<li data-t="setAll" data-k="prize" data-v="1">
+				<span class="w25 font16">中奖通知</span>
+				<p class="switch set"><em class="on">开</em><em class="block move js_toggle"></em><em class="off">关</em></p>
+			</li>
+		</ul>
+		<p class="set_tip font12 gray">开启后，可收到推送的中奖消息</p>
+		<ul class="info_list mb30" id="prizeNotify_prizeObj">
+			<li data-t="lottery" data-l="ssq" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">双色球</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="dlt" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">大乐透</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="jczq" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">竞足混投</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="ftfh" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">竞足2选1</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="spf14" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">胜负彩</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="spf9" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">任选九</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="pl3" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">排列三</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="pl5" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">排列五</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<!--
+			<li data-t="lottery" data-l="qxc" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">七星彩</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			-->
+           <!-- <li data-t="lottery" data-l="gd11x5" data-k="prize" data-v="1"  style="display:none" class="clearfix">
+				<span class="w25 font16">11选5</span>
+				<p class="switch set" style="display:;"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>-->
+			<!--
+            <li data-t="lottery" data-l="BSKSF" data-k="prize" data-v="1" class="clearfix">
+				<span class="w25 font16">竞彩篮球</span>
+				<p class="switch set" style="display:;"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			-->
+		</ul>
+        </div>
+		<!--
+		<ul class="info_list">
+			<li data-t="setAll" data-k="open" data-v="1" id="prizeNotify_open_total" class="clearfix">
+				<span class="w25 font16">开奖通知</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle "></em><em class="off">关</em></p>
+			</li>
+		</ul>
+		-->
+		<p class="set_tip font12 gray">开启后，可收到推送的开奖消息</p>
+		<ul class="info_list mb30" id="prizeNotify_openObj" style="display:none">
+			<li data-t="lottery" data-l="ssq" data-k="open" data-v="1" class="clearfix">
+				<span class="w25 font16">双色球</span>
+				<span class="w50 gray center font12">每周二、四、日提醒</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="dlt" data-k="open" data-v="1" class="clearfix">
+				<span class="w25 font16">大乐透</span>
+				<span class="w50 gray center font12">每周一、三、六提醒</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="d3" data-k="open" data-v="1" class="clearfix">
+				<span class="w25 font16">福彩3D</span>
+				<span class="w50 gray center font12">每天提醒</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="pl3" data-k="open" data-v="1" class="clearfix">
+				<span class="w25 font16">排列三</span>
+				<span class="w50 gray center font12">每天提醒</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="pl5" data-k="open" data-v="1" class="clearfix">
+				<span class="w25 font16">排列五</span>
+				<span class="w50 gray center font12">每天提醒</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="spf14" data-k="open" data-v="1" class="clearfix">
+				<span class="w25 font16">胜负彩</span>
+				<span class="w50 gray center font12"></span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<li data-t="lottery" data-l="spf9" data-k="open" data-v="1" class="clearfix">
+				<span class="w25 font16">任选九</span>
+				<span class="w50 gray center font12"></span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			<!-- 暂时隐藏竞彩足球的开奖通知
+			<li data-t="lottery" data-l="jczq" data-k="open" data-v="1" class="clearfix">
+				<span class="w25 font16">竞彩足球</span>
+				<p class="switch set"><em class="on">开</em><em class="block js_toggle"></em><em class="off">关</em></p>
+			</li>
+			-->
+		</ul>
+	</section>
+	<div class="tip_con" style="display:none;" id="prizeNotify_tipsObj">
+		<div class="tip_box center"></div>
+	</div>
+</div>
+</body>
+
+</html>

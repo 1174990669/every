@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>站点信息</title>
+</head>
+
+<body>
+<div class="wrapper centerWrap" id="stationDetail_wrap">
+	<header class="header ">
+		<a href="javascript:void(0)" class="head_lf" id="stationDetail_backbtn"><span class="backicon icon"></span></a>
+		<h3 class="head_cn">站点详情</h3>
+		<p class="head_rt"><span class="shareicon icon" id="stationDetail_share"></span></p>
+	</header>
+	<section>
+		<div class="banner" id="stationDetail_bannerObj">
+			<ul class="banner_scroll">
+				
+			</ul>
+			<p class="page_total"><em class="font12" id="stationDetail_nowNumObj"></em><i class="font12">/</i><em class="font12" id="stationDetail_total"></em></p>
+		</div>
+		<div class="sinfo-new mb10">
+			<div class="site_box">
+				<div class="boxlf clearfix">
+					<p class="zd-ewm fl mr10" id="stationDetail_codeImg"></p>
+					<div class="sbox-new fl zdinfo-new">
+						<p class="font14">No. <span id="stationDetail_id"></span> 彩票站</p>
+						<p class="font12 gray">
+                        	<span class="fontyellow" id="stationDetail_status"></span> 
+                            <span id="stationDetail_time"> </span>
+                        </p>
+						<p class="font12 gray" id="stationDetail_location"><em class="icon site-add"></em><span id="stationDetail_address"></span></p>
+					</div>
+				</div>
+                 <!--<p class="js_mange_1 fontblue" id="stationDetail_manage" > 管理站点 </p>-->
+				<div class="boxrt"><span class="infon_arrow"></span><span class="white_bg"></span></div>
+				<p class="opt-tzh font16" id="stationDetail_part1" style="display:none">
+                    <a href="javascript:void(0)" id="stationDetail_phone" >
+						<span class="fontblue"><em class="telicon icon"></em>电话咨询</span>
+					</a>
+                    <a href="javascript:void(0)" id="stationDetail_im" style="display:none">
+						<span class="fontblue"><em class="msgicon_2"></em>在线咨询</span>
+					</a>
+					<a href="javascript:void(0)" id="stationDetail_bind" data-sid="">
+						<span class="fontblue"><em class="bindicon icon"></em>立即绑定</span>
+					</a>
+				</p>
+                <p class="opt-tzh font16" id="stationDetail_part3" style="display:none">
+                   <!-- <a href="javascript:void(0)" id="stationDetail_phone2" >
+						<span class="fontblue"><em class="telicon icon"></em>电话咨询</span>
+					</a>-->
+                    <a href="javascript:void(0)" id="stationDetail_order" >
+						<span class="fontblue"><em class="ordericon"></em>会员订单</span>
+					</a>
+                    <a href="javascript:void(0)" id="stationDetail_manage" >
+						<span class="fontblue"><em class="manageicon"></em>管理站点</span>
+					</a>
+                </p>
+               <!-- <p class="opt-tzh font16" id="stationDetail_part2" style="display:none">
+						<span class="icon memberBetIcon ml10"></span> <span >会员订单</span> <span class="fr  font14  fontred">今日<em id="stationDetail_todayBet">0</em>单  <em class="rtarrow icon"></em></span> 
+				</p>-->
+               
+			</div>
+		</div>
+		<div class="coupon-wrap mb10" id="stationDetail_bonus">
+			<ul class="coupons clearfix" style="width:720px;" style="display:none">
+				
+			</ul>
+		</div>
+		<div class="info-txt mb20" id="stationDetail_desc">以“取之于民，用之于民”为宗旨，给彩民一个舒适干净的购彩环境，为彩民所需，为彩民所想，引导彩民购彩，量力而行，理性投注，做彩民的参谋，把彩站变成彩民的家</div>
+	</section>
+     <div class="overlayer" style="display:none" id="stationDetail_telTip" data-t="hideTips">
+        <div class="bottomcon" data-t="nohide">
+            <div class="playtip">
+                <h3>致电给</h3>
+                <p class="font14 center" id="stationDetail_telNum"></p>
+            </div>
+            <p class="btn_simple">
+                <a href="javascript:void(0);" data-t="clearTelTip" class="w50"><span class="first">取消</span></a><a href="tel:" id="stationDetail_toTel" data-t="toTelTip" class="w50"><span>确定</span></a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

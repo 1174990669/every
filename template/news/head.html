@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../package/big.css"/>
+	<script type="text/javascript" src="../../package/lib.js"></script>
+	<!-- <script type="text/javascript" src="../../package/big.js"></script> -->
+
+	<!-- <script type="text/javascript" src="package/lib.js"></script>  -->
+	<!-- <script type="text/javascript" src="package/big.js"></script>   -->
+	<style>
+		/**{font-size:3rem;}*/
+		.p-one{text-align: center;line-height: 6rem;}
+		.p-one span{float: left;padding-left:10px;}
+		#p-id{padding:10px;}
+		#p-tit{width:100%;text-align: center;padding-top:20px;}
+		#p-time{text-align: center;padding:10px 0; }
+	</style>
+</head>
+<body>
+	<header style="background-color: #fff;">
+		<!-- <p class="p-one"><span onclick="window.history.go(-1)"><</span>天天中彩</p> -->
+	</header>
+	<h1 id='p-tit'></h1>
+	<p id="p-time"></p>
+	<p id='p-id'></p>
+
+	<script>
+		function GetQueryString(name){
+	        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	        var r = window.location.search.substr(1).match(reg);
+	        if(r!=null)return  unescape(r[2]); return null;
+	    }
+	    var matchId = GetQueryString("id")
+	    $.ajax({
+	    	url:'http://a.xxyya.cn:8269/api?m=cashier.excep.js_newlist/new_id/'+matchId,
+	    	data:'',
+	    	type:'get',
+	    	dataType:'json',
+	    	success:function(res){
+	    		// var re = $.parseJSON(res.info)
+	    		// console.log(res.info.content)
+	    		// console.log(re)
+
+	    		var htm = res.info.content
+	    		var htm2 = res.info.title
+	    		var htm3 = res.info.updatetime  
+	    		var htm4 = res.info.source  
+
+	    		function timestampToTime(timestamp) {
+			        var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+			        Y = date.getFullYear() + '-';
+			        M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+			        D = date.getDate() + ' ';
+			        h = date.getHours() + ':';
+			        m = date.getMinutes() + ':';
+			        s = date.getSeconds();
+			        return Y+M+D+h+m+s;
+			    }
+			    timestampToTime(htm3);
+			    // console.log(timestampToTime(htm3));
+	    		// console.log(res)
+	    		// console.log(htm3)
+	    		// console.log(htm4)
+	    		var html = htm4 +'  '+ timestampToTime(htm3)
+	    		console.log(html)
+	    		$('#p-id').append(htm)
+	    		$('#p-tit').append(htm2)
+	    		$('#p-time').append(html)
+	    	}
+
+	    })
+
+	</script>
+</body>
+</html>

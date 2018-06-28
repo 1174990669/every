@@ -1,0 +1,485 @@
+@charset "utf-8";
+/*积分抽奖*/
+.g-bg-top{ 
+	position: relative;
+}
+.g-bg-top > img{width: 100%;}
+.g-bg-bot > img{width: 100%;}
+.g-lottery{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	background:#fadd51 url(../images/activity/g-bg.png) no-repeat center 135px;
+	background-size:contain;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.myprize{
+	position: absolute;
+	bottom: -40px;
+	right: 3%;
+	display: block;
+	padding-top:6px;
+	width: 45px;
+	height: 39px;
+	line-height: 16px;
+	background: #ed392b;
+	color: #fff;
+	text-align: center;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 0 1px rgba(0,0,0,.1);
+	z-index: 2;
+}
+.turntable{
+	position: relative;
+	margin: 0 auto 5px;
+	width: 264px; height: 264px;
+	background: #f74a43;
+	border-radius: 50%;
+	overflow: hidden;	
+	z-index: 2;
+}
+.g-prize{
+	position: relative;
+	width:264px;
+	height: 264px;
+	background: url(../images/activity/g-prize.png) no-repeat 0 0;
+	background-size: 100%;	
+	transform-origin: 50% 50%;
+}
+.g-arrow{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -52px 0 0 -42px;
+	width: 84px;
+	height: 104px;
+	background: url(../images/activity/g-arrow.png) no-repeat 0 0;
+	background-size: 100%;
+}
+/*奖项*/
+.g-pos{
+	position: absolute;
+	display: block;
+	width: 33.3333%;
+	text-align: center;
+}
+.g-pos > span,.g-pos > em{
+	display: block;
+	font-weight: bold;
+	text-shadow:#fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+}
+.g-pos > span:first-of-type{
+	font-size: 16px;
+	color: #ed392b;
+	height: 24px;
+	overflow: hidden;
+}
+.g-pos > span:last-of-type{
+	font-size: 12px;
+	color: #fbb328;
+}
+.g-pos.g1{
+	left: 88px;
+	top: 30px;
+}
+.g-pos.g2{
+	left: 160px;
+	top: 70px;
+	transform: rotate(60deg);
+}
+.g-pos.g3{
+	left: 160px;
+	top: 150px;
+	transform: rotate(120deg);
+}
+.g-pos.g4{
+	left: 88px;
+	top: 195px;
+	transform: rotate(180deg);
+}
+.g-pos.g5{
+	left: 15px;
+	top: 150px;
+	transform: rotate(-120deg);
+}
+.g-pos.g6{
+	left: 15px;
+	top: 70px;
+	transform: rotate(-60deg);
+}
+.g-pos.g6 > em{
+	display: inline-block;
+	font-size: 16px;
+	width: 40px;
+	color: #fbb328;
+	line-height: 1.2;
+}
+
+.g-box{
+	position: relative;
+	margin: 0 auto;
+	padding:10px 10px 5px;
+	width: 230px;
+	background: #feeeda;
+	border: 5px solid #f90;
+	box-shadow: 0px 4px 4px 0px #d0885a inset;
+}
+.g-box .tit{
+	position: absolute;	
+	left: 50%;
+	margin-left: -35px;
+	display: inline-block;
+	width: 70px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+	background: #f90;
+}
+.prize-box:before{
+	content: '';
+	position: absolute;
+	top: -185px;
+	left: -5px;
+	width: 0px;
+	border-bottom: 180px solid #f90;
+	border-left: 130px solid transparent;
+	border-right: 130px solid transparent;
+}
+.prize-box{
+	padding-top:24px;
+}
+.prize-box .tit{
+	top: -5px;
+}
+.prize-box .winner-name{
+	display: inline-block;
+	width: 60px;
+	margin-right: 5px;
+	margin-left: 5px;
+	height: 20px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.winner-list{
+	max-height: 120px;
+	overflow-y: scroll;
+}
+.rule-box{
+	margin-top: 30px;
+}
+.rule-box .tit{
+	top: -24px;
+}
+.rule-box.mb20{
+	margin-bottom: 20px;
+}
+.tckwrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:-120px 0 0 -115px;
+	width:230px;
+	height: 240px;
+	background: #fff8c4;
+	border-radius: 10px;
+}
+.tckbox{
+	position: relative;
+}
+.tckbox .close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	background: #fa8252;
+	border-radius: 50%;
+	box-shadow: 0 2px 0 1px rgba(255,255,255,.1);
+	z-index: 2;
+}
+.tckcon{
+	padding-top: 30px;
+}
+.winbox .close{
+	right: -5px;
+}
+.winbox .tit{
+	position: absolute;
+	top: -100px;
+	left: -28px;
+	width: 280px;
+	height: 176px;
+	background: url(../images/activity/g-tit.png) no-repeat 0 0;
+	background-size: 100%;
+}
+.winbox .tit > p{
+	position: absolute;
+	top: 90px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff2c5;
+	font-size: 24px;
+}
+.winbox .tckcon{
+	padding-top: 60px;
+}
+.coupon-box{
+	position: relative;
+	display: inline-block;	
+	width: 190px;
+	height: 77px;
+	background: url(../images/activity/g-coupon.png) no-repeat 0 0;
+	background-size: 100%;
+	
+}
+.coupon-box .cop1{
+	position: absolute;
+	top: 5px;
+	left: 25px;
+	display: inline-block;
+	width: 24px;
+	color: #f6bfbf;
+	font-size: 18px;
+	line-height: 22px;
+}
+.coupon-box .cop2{
+	display: inline-block;
+	text-align: center;
+	color: #fffc00;
+	width: 115px;
+	padding-left:55px;
+	font-size: 24px;
+	line-height: 77px;
+}
+.coupon-box.big{
+	width: 277px;
+	height: 112px;
+}
+.coupon-box.big .cop1{
+	top: 8px;
+	left: 40px;
+	font-size: 24px;
+	line-height: 30px;
+}
+.coupon-box.big .cop2{
+	padding-left: 90px;
+	width: 150px;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 112px;
+}
+.sad-img{
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 101px;
+	height: 101px;
+	background: url(../images/activity/g-sad.png) no-repeat 0 0;
+	background-size: 100%;
+}
+.sad-txt{
+	color: #ffb545;
+	font-size: 20px;
+}
+.waybox{
+	background: #f3f3f3;
+	margin: 15px auto;
+	width: 75%;
+	padding: 10px;
+	text-align: left;
+}
+.waybox .tit{
+	color: #fa8252;
+}
+/*领取奖品*/
+.get-prize{
+	padding: 20px 0;
+	background: #fff8c4;
+	border-bottom: 1px solid #ebebeb;
+}
+.get-jd{
+	margin: 0 auto 50px;
+	width: 207px;
+}
+.delivery,.delivery:after{
+	height: 25px;
+	background: url(../images/activity/g-jd.png) no-repeat 0 0;
+	background-size: 100%;
+}
+.delivery{
+	width:207px;
+	position: relative;	
+	background-position: 0 -25px;
+}
+.delivery:after{
+	position: absolute;
+	width: 0;
+	top: 0;
+	left: 0;
+	content: '';
+	display: inline-block;
+	background-position: 0 0;
+	z-index: 2;
+}
+.delivery.over:after{
+	width: 100%;
+}
+.delivery-txt{
+	position: relative;
+}
+.delivery-txt > span:first-of-type{
+	margin-left: -28px;
+	margin-right: 20px;
+}
+.delivery-txt > span:last-of-type{
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+}
+.get-info{
+	padding: 0px 3% 10px;
+	color: #fa8252;
+}
+
+/*邀请送红包*/
+.font10{font-size: 10px;}
+.invite-wrap .header{position: absolute; top: 0; left: 0; background: none; z-index: 10;}
+.iv-icon{ background: url(../images/activity/invite-icon.png) no-repeat 0 0; background-size: 100px 115px;}
+.iv-banner{position: relative;color: #770c16;}
+.iv-banner img{width: 100%;}
+.iv-btn{position: relative; display: inline-block;margin:0 5%; width: 100px; height: 40px; text-align: center; line-height: 40px; color: #770c16; font-size: 16px;}
+.iv-btn .dot{position: absolute; top: -5px; right: -4px; width: 16px; height: 16px; background: #e8633f; color: #fff; line-height: 16px; text-align: center; border-radius: 50%; font-size: 12px;}
+.iv-rule{padding: 0 3% 15px; border: 0; border-top: 1px dashed #c38673; background: none; color: #770c16;}
+
+.iv-bg{height: 270px; background: url(../images/activity/iv-bg.png) no-repeat 0 0; background-size: 100%;}
+.iv-none{background-image:url(../images/activity/iv-none.png);}
+.iv-tab{width: 98%; margin: 0 1%;}
+.iv-tab li{ float: left; width: 25%; text-align: center;}
+.iv-tab li > span{position: relative; display: inline-block; width: 90%; height: 25px; line-height: 25px; border: 1px solid rgba(255,255,255,.7);color:rgba(255,255,255,.7);}
+.iv-tab li > span .dot{position: absolute;top: -6px; right: -6px; width: 16px; height: 16px; background: #fcbe33; color: #770c16; line-height: 16px; text-align: center; border-radius: 50%; font-size: 12px;}
+.iv-tab li.on > span{ background: #a11c2c; border-color:transparent;}
+
+.iv-bubbles{position: relative;padding-top: 44px; width: 100%; height: 190px;}
+.bubble-item{position: absolute;width: 70px; text-align: center;line-height: 14px;}
+.bubble-item .bubble{display:inline-block;padding: 15px 15px; width: 40px; height: 30px; background-position: 0 -40px; color: #fff;overflow: hidden; word-break: break-all; }
+.bubble-item .bubble .vcenter{width: 40px; height: 30px;overflow: hidden;}
+.bubble-item .txt{color:rgba(255,255,255,.5); font-size: 12px;}
+.iv-slogan{margin-top: 40px; color: #fff;}
+.iv-none-txt{margin-bottom: 10px;}
+.iv-none-txt > img{ width: 110px; height: 30px;}
+/*任意行文字垂直居中*/
+.vcenter{position: relative;height: 100%;}
+.vcenter-child{position: absolute;top: 0;right: 0;bottom: 0;left: 0;width: 100%;margin: auto;display: table;text-align: center;}
+
+.iv-table{border: 0; border-top: 1px solid #e0b1af; color: #770c16;}
+.iv-table legend{padding:15px 10px; text-align: center;}
+.iv-table tr{height: 35px;}
+/*.iv-table tr:nth-child(odd){background: #ffedd8;}*/
+.iv-table span{display: block;}
+.iv-table em{font-weight: bold;}
+.iv-table td{position: relative;}
+.iv-table .no-text{padding: 40px 0;}
+.iv-hand{position: absolute; right: 0; top: 0;display: inline-block; width: 21px; height: 13px; background-position: 0 -100px;}
+.home_regnewBonus{
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+.regnewBonus_no{
+	width: 24px;
+	height: 24px;
+	position: fixed;
+	right: 10%;
+	top: 10%;
+	z-index: 1000;
+}
+.regnewBonus_img{
+	position: fixed;
+	top: 11%;
+	z-index: 1000;
+}
+.regnewBonus_btn{
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	top: 65%;
+}
+.regnewBonus_btn p{
+	display: inline-block;
+	width: 40%;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #ff5024;
+	color: #fff;
+	line-height: 40px;
+	font-size: 16px;
+}
+.regnewBonus_con{
+	background-color: #e02d22;
+	padding-top: 44px;
+}
+.regnewBonus_bg{
+	overflow: visible;
+}
+.regnewBonus_date{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+.reg_btn{
+	display: inline-block;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #ffff00;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #f15549;
+	position: absolute;
+	bottom: -30px;
+	left: 25%;
+}
+.regnewBonus_rule{
+	width: 90%;
+	color: #fff;
+	padding: 0 5% 20px;
+}
+.regnewBonus_rule p{
+	font-size: 12px;
+}
+.regnewBonus_table{
+	margin: 40px 5% 20px;
+	background: #fff;
+	border-radius: 4px;
+}
+.regnewBonus_table>ul{
+	border-right: 1px solid #e02d22;
+}
+.regnewBonus_table>ul>li{
+	border-bottom: 1px solid #e02d22;
+	height: 19px;
+	line-height: 19px;
+}
+.table_l{
+	float: left;
+	text-align: center;
+	font-size: 12px;
+
+}

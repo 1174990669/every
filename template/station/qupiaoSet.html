@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css" />
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header">
+		<p class="head_lf" data-t="backbtn"><span class="backicon icon"></span></p>
+		<h3 class="head_cn" id="qupiaoSet_topTit"></h3>
+	</header>
+    
+    <section class="centerWrap"  style="display:none" id="qupiaoSet_progressEnd">
+    	<div class="circle center circle_succeed">
+			<div class="outer">
+				<div class="inner">
+					<p class="state2">
+						<span class="succeed statebg">出票完成</span>
+                       <!-- <span class="suc_part statebg">部分成功</span> -->
+					</p>
+				</div>
+			</div>
+		</div>
+    </section>
+    
+	
+    
+
+	<section class="centerWrap"  style="display:none;" id="qupiaoSet_failLayer">
+		<div class="circle center circle_fail">
+			<div class="outer">
+				<div class="inner">
+					<p class="state2">
+						<span class="fail statebg">出票失败</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<p class="center font16" id="qupiaoSet_failDetail">出票失败，无法取票</p>
+	</section>
+    <section class="centerWrap"  >
+		<div class="circle center">
+			<div class="outer" id="qupiaoSet_progressCon">
+				<div class="inner">
+					<p class="state2">
+						<span>正在出票</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<p class="center"><a href="javascript:void(0)" class="btn btn_big" id="qupiaoSet_qupiaoBtn">我要取票</a></p>
+        <p class="center"><a href="javascript:void(0)" class="btn btn_big" id="qupiaoSet_refreshBtn" style="display:none">刷新进度</a></p>
+	</section>
+    <section class="centerWrap"  style="display:none;" id="qupiaoSet_successLayer">
+	</section>
+		
+	<div class="nav_bot">
+		<a href="javascript:void(0)" data-t="jsGoRecord">投注记录</a><a data-t="jsGoProjectDetail" href="javascript:void(0)">订单详情</a><a href="javascript:void(0)" data-t="jsGoHome">继续购彩</a>
+	</div>
+	<div class="overlayer" style="display:none;" id="qupiaoSet_confirmLayer">
+		<div class="bottomcon">
+			<div class="playtip">
+				<h3>取票提示</h3>
+				<p class="font14">确认到绑定站点取票并自行兑奖。</p>
+			</div>
+			<p class="btn_simple">
+				<a href="javascript:void(0)" class="w50" id="qupiaoSet_cancelBtn"><span class="first">取消</span></a><a href="javascript:void(0)" class="w50" id="qupiaoSet_confirmBtn"><span>确定</span></a>
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

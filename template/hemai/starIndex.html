@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>大咖主页</title>
+<link rel="stylesheet" href="css/global.css" />
+</head>
+
+<body>
+<div class="wrapper" id="starIndex_wrapObj">
+	<header class="header">
+		<p class="head_lf" data-t="backbtn"><span class="backicon icon" ></span></p>
+		<h3 class="head_cn">大咖主页</h3>
+	</header>
+	<section class="centerWrap" >
+		<div class="myInfo">
+			<div class="myInfo_name starIndex_name text_show" id="starIndex_name"></div>
+			<div class="starIndex_atn" id="starIndex_option"></div>
+			<div class="myInfo_follow starIndex_follow text_show">关注&nbsp;<span id="star_follow"></span></div>
+			<div class="myInfo_fans starIndex_fans text_show">粉丝&nbsp;<span id="star_fans"></span></div>
+			
+		</div>
+		<div class="myRecord clearfix">
+			<div class="myRecord_title">近期战绩</div>
+			<div class="my_pool">
+				<p>方案金额</p>
+				<span id="starIndex_buyMoney"></span>
+			</div>
+			<div class="my_win">
+				<p>中奖金额</p>
+				<span id="starIndex_prizeMoney"></span>
+			</div>
+		</div>
+		<div class="myRecord clearfix">
+			<div class="myRecord_title">推荐方案<span id="starIndex_onlist" data-t="moreList" data-v="on">更多 ></span></div>
+			<div id="recomRecord"><p class="loading_7"></p></div>
+		</div>
+		<div class="myRecord clearfix">
+			<div class="myRecord_title">历史方案<span id="starIndex_endlist" data-t="moreList" data-v="end">更多 ></span></div>
+			<div id="recentRecord"><p class="loading_7"></p></div>
+		</div>
+	</section>
+	<section class="hemaiDet" id="starIndex_buyObj" style="display: none;">
+		<div class="hmDet_bet">
+			<div class="hmDet_bet_t">
+				<em class="icon checkbox checked reg_yes"></em>
+				我已阅读并同意
+				<a href="javascript:void(0);" class="fontblue" data-t="xy">《用户跟单知情协议》</a>
+			</div>
+			<div class="hmDet_bet_b">
+				<div class="hmDet_input clearfix">
+					<div class="hmInput_in clearfix">
+						<span data-t="reduce" data-k="q">－</span>
+						<span data-t="per" id="starIndex_copObj">1份</span>
+						<span data-t="increase" data-k="q">＋</span>
+					</div>
+					<div class="hmInput_money">共<p id="starIndex_moneyObj">1</p>元</div>
+				</div>
+				<div class="hmDet_btn clearfix">
+					<div class="hmDet_btn_list"><p style="background-color: #fa993b;" data-t="buyAll">全包</p></div>
+					<div class="hmDet_btn_list"><p style="background-color: #e04241;" data-t="submit">立即购买</p></div>
+				</div>
+			</div>
+		</div>
+	    <div class="keyboard key3" style="display:none;" id="starIndex_overNumObj">
+			<ul>
+				<li>
+					<span data-t="on" data-v="1"><em>1</em></span>
+					<span data-t="on" data-v="2"><em>2</em></span>
+					<span data-t="on" data-v="3"><em>3</em></span>
+				</li>
+				<li>
+					<span data-t="on" data-v="4"><em>4</em></span>
+					<span data-t="on" data-v="5"><em>5</em></span>
+					<span data-t="on" data-v="6"><em>6</em></span>
+				</li>
+				<li>
+					<span data-t="on" data-v="7"><em>7</em></span>
+					<span data-t="on" data-v="8"><em>8</em></span>
+					<span data-t="on" data-v="9"><em>9</em></span>
+				</li>
+				<li>
+					<span data-t="od"><em class="font18">←</em></span>
+					<span data-t="on" data-v="0"><em>0</em></span>
+					<span data-t="os"><em class="fontblue">确定</em></span>
+				</li>
+			</ul>
+		</div>
+	</section>
+</div>
+
+</body>
+
+</html>

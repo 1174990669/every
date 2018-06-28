@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+</head>
+<body>
+<div class="wrapper" id="soccerMix_lotteryObj">
+	<header class="header">
+		<p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn"><span class="dlt_tit" data-t="showUpd">竞足混投<em class="down" ></em></span></h3>
+		<p class="head_rt">
+        	<a href="javascript:void(0)" class="topSpeLink" data-t="filter"><span class="filtericon icon mr10"  data-t="filter"></span></a>
+            <a href="javascript:void(0)" class="topSpeLink" data-t="showNav"><span class="navicon icon" data-t="showNav"></span></a>
+        </p>
+	</header>
+	<!-- <div class="tzhu_style clearfix centerWrap" id="soccerMix_updObj" style="display:none;">
+		<p data-t="updLotteryType" data-v="spf" class="selected"><span>竞足混投</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+		<p data-t="updLotteryType" data-v="2x1"><span>2选1</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+	</div> -->
+	<div class="tzhu_style clearfix centerWrap" >
+		<p data-t="updLotteryType" data-v="spf" class="selected" style="color:#ff5024;">竞足混投</p>
+		<p data-t="updLotteryType" data-v="2x1">2选1</p>
+	</div>
+	<div class="navlist" style="display:none;" id="soccerMix_navObj">
+		<span class="nav_arrow statebg"></span>
+		<ul>
+			<li data-t="kaijiang"><a href="javascript:void(0);">竞足赛果</a></li>
+			<li data-t="help"><a href="javascript:void(0);">玩法说明</a></li>
+		</ul>
+	</div>
+
+	<section class="centerWrap"  id="soccerMix_matchListObj">
+		<p class="loading_1"></p>
+	</section>
+    
+    <span class="prise_dot" id="soccerMix_bonusOpt" style="display:none;">奖金优化</span>
+    
+	<section   class="bottomcon">
+		<span class="img_box prise_hemai" data-t="hemai" id="soccerMix_hemai"><img src="images/images/open_hm.png" alt="发起合买"/></span>
+		<div class="bet_tip2" id="soccerMix_betOneTipsObj">
+			<p class="center fontred">红框1场也能投</p>
+			<p class="center font12 gray">页面赔率仅供参考，请以出票为准</p>
+		</div>
+        	<!-- 奖金评测 start-->
+		<div class="jjpc center" id="soccerMix_bonusDeilObj" style="display:none;">
+			<div class="pc_tit clearfix">
+				<span class="fl w30">命中</span>
+				<span class="fl w70">最小奖金<em class="jgx">~</em>最大奖金</span>
+			</div>
+			<div class="pc_list" id="soccerMix_bonusListObj">
+			</div>
+            <div class="grayDesc_1">单注最高奖金2-3关20万，4-5关50万，6关及以上100万</div>
+		</div>
+		<!-- 奖金评测 end-->
+		<!-- 倍数设置 start-->
+		<div class="bs_set" style="display:none;" id="soccerMix_multipleObj">
+			<div class="keyboard key5 bs_simple">
+				<ul>
+					<li>
+						<span data-t="setM" data-v="10"><em>10倍</em></span>
+						<span data-t="setM" data-v="20"><em>20倍</em></span>
+						<span data-t="setM" data-v="50"><em>50倍</em></span>
+						<span data-t="setM" data-v="100"><em>100倍</em></span>
+						<span data-t="setM" data-v="200"><em>200倍</em></span>
+					</li>
+				</ul>
+			</div>
+			<div class="keyboard key3">
+				<ul>
+					<li>
+						<span data-t="addM" data-v=1><em>1</em></span>
+						<span data-t="addM" data-v=2><em>2</em></span>
+						<span data-t="addM" data-v=3><em>3</em></span>
+					</li>
+					<li>
+						<span data-t="addM" data-v=4><em>4</em></span>
+						<span data-t="addM" data-v=5><em>5</em></span>
+						<span data-t="addM" data-v=6><em>6</em></span>
+					</li>
+					<li>
+						<span data-t="addM" data-v=7><em>7</em></span>
+						<span data-t="addM" data-v=8><em>8</em></span>
+						<span data-t="addM" data-v=9><em>9</em></span>
+					</li>
+					<li>
+						<span data-t="delM"><em class="font18">←</em></span>
+						<span data-t="addM" data-v=0><em>0</em></span>
+						<span data-t="subM"><em>确定</em></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 倍数设置 end-->
+		<!-- 过关方式和已选场次 start-->
+		<div class="setwrap" style="display:none;"  id="soccerMix_ddDetailObj">
+			<ul class="settab mb15 clearfix">
+				<li class="on" data-t="showgg">
+					<span>过关方式</span>
+				</li>
+				<li class="" data-t="showdd">
+					<span id="soccerMix_ddTitleObj">已选0场【设胆】</span>
+				</li>
+			</ul>
+			<div class="gg_con" id="soccerMix_ggObj">
+				<div class="ggstyle">
+					<p class="clearfix" id="soccerMix_oneGGObj">
+						<!-- <span>单关</span><span class="selected">2串1<em class="statebg"></em></span><span>3串1</span><span>4串1</span> -->
+					</p>
+				</div>
+				<p class="w94 mb10" data-t="showOtherGG" id="soccerMix_showOtherGGObj">更多过关方式 <em class="arrow"></em></p>
+				<div class="ggstyle" style="display:none;">
+					<p class="clearfix" id="soccerMix_otherGGObj">
+						<!-- <span>3串3</span><span>3串4</span><span>4串4</span><span>4串5</span><span>4串6</span><span>4串11</span><span>5串5</span><span>5串6</span> -->
+					</p>
+				</div>
+			</div>
+			<div class="lists jz_lists" id="soccerMix_ddObj" style="display:none;">
+			</div>
+		</div>
+		<!-- 过关方式和已选场次 end-->
+		<div class="bet_jz clearfix" style="display:none;" id="soccerMix_lotteryInfoObj">
+			<p class="fl" id="soccerMix_ggdoorObj" data-t="showDDDom">
+			</p>
+			<p class="fl fontblue" data-t='showMultiple' id="soccerMix_multipleValObj">1倍</p>
+			<div class="bet_mid fl center">
+				<p class="pt5">共<span class="fontred" id="soccerMix_moneyObj">0</span>元</p>
+				 <!--data-t="getBonusDeil" 暂时奖金明细 -->
+				<p class="font12" >最高奖金<span class="fontred f-line" id="soccerMix_bonusObj">0</span>元</p>
+			</div>
+			<p class="fr w25"><a href="javascript:void(0);" data-t="submit" class="btn_buy">付 款</a></p>
+		</div>
+	</section>
+	<!-- 选号start -->
+	<section   class="layler_xh" style="display:none;" id="soccerMix_betspObj">
+	</section>
+	<!-- 选号end -->
+</div>
+</body>
+
+</html>

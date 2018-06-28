@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<p class="head_lf" id="modifyUserName_backObj"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">修改昵称</h3>
+	</header>
+	<section class="centerWrap" >
+		<ul class="mb40">
+			<li class="first_li font16">当前昵称：<span id="modifyUserName_nowName"></span></li>
+			<li class="act_box" id="modifyUserName_userLiObj">
+				<span class="font16">新昵称：</span><input type="text" placeholder="请输入新昵称" id="modifyUserName_usernameObj" value="">
+				<span class="editbox"><em class="editicon icon"></em></span>
+			</li>
+		</ul>
+		<p class="center mb35">
+			<a href="javascript:void(0);" id="modifyUserName_submitObj" class="btn btn_big">确 定</a>
+		</p>
+	</section>
+	<div class="paybot">
+		<p class="w94 mb20 gray font12">温馨提示<br/>
+		1. 昵称只能修改一次，请谨慎操作；<br/>
+		2. 若有疑问请咨询在线客服或拨打客服热线。 
+		</p>
+	</div>
+	<div class="overlayer" style="display:none;" id="modifyUserName_tipsObj" data-t="tips">
+		<div class="bottomcon">
+			<div class="playtip">
+				<h3>修改提示</h3>
+				<p class="font14">用户名只能修改1次，请谨慎操作！</p>
+			</div>
+			<p class="btn_simple"><a href="javascript:void(0);" class="w50" data-t="close"><span class="first">取消</span></a><a href="javascript:void(0);" class="w50" data-t="sub"><span>确定</span></a></p>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<p class="head_lf" id="userInfo_backObj"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">个人设置</h3>
+	</header>
+    <div class="loading_1" id="userInfo_loading"></div>
+	<section class="centerWrap"  id="userInfo_sectionObj" style="display:none">
+		<!--<ul class="info_list">
+			<li  id="userInfo_modifyName">
+			</li>
+			<li data-t="href" data-v="modifypwd">
+				<span class="w25 font16">登录密码</span>
+				<span class="w50 gray center font12" id="userInfo_lastLoginTime"> </span>
+				<span>修改<em class="rtarrow icon"></em></span>
+			</li>
+			<li data-t="href" data-v="verify">
+				<span class="w25 font16">实名认证</span>
+				<span class="w50 gray center font12">认证信息，安全保障</span>
+				<span id="userInfo_verifyText">查看<em class="rtarrow icon"></em></span>
+			</li>
+			<li data-t="href" data-v="modifyphone">
+				<span class="w25 font16">绑定手机</span>
+				<span class="w50 gray center font12" id="userInfo_bindMobile"></span>
+				<span>修改<em class="rtarrow icon"></em></span>
+			</li>
+			
+		</ul> -->
+        <div class="myinfo">
+          <!-- 用户头像 -->
+          <!-- <dl id="name_img" class="clearfix"  > 
+            <dt><span class="info-icon info-verifyimg"></span></dt>
+            <dd>
+              <p class="font16">用户头像</p>
+              <p class="font12 gray">个性化头像</p>
+            </dd>
+            <span class="rtbox" id="userInfo_img">
+              <img class="gray em-img" src="http://cptest.xxyya.cn:8269/Uploads/default.jpg" alt="">
+              <em class="gray em-img"></em>
+              <em class="rtarrow icon"></em>
+              </span>
+          </dl> -->
+          <!-- 用户昵称-->
+          <div id="userInfo_modifyName"></div>
+          <!-- 登录密码-->
+          <dl class="clearfix" data-t="href" data-v="modifypwd" id="userInfo_password_dl" style="display: none">
+            <dt><span class="info-icon info-psw"></span></dt>
+            <dd>
+              <p class="font16">提现密码</p>
+              <p class="font12 gray" id="userInfo_lastLoginTime">上次登录：2017/02/14</p>
+            </dd>
+            <span class="rtbox"><em class="gray">修改</em><em class="rtarrow icon"></em></span>
+          </dl>
+          <!-- 实名认证-->
+          <dl class="clearfix" data-t="href" data-v="verify">
+            <dt><span class="info-icon info-verify"></span></dt>
+            <dd>
+              <p class="font16">实名认证</p>
+              <p class="font12 gray">认证信息，安全保障</p>
+            </dd>
+            <span class="rtbox" id="userInfo_verifyText"><em class="gray">认证</em><em class="rtarrow icon"></em></span>
+          </dl>
+          <!-- 银行信息-->
+          <dl class="clearfix" data-t="href" data-v="mybanklist">
+            <dt><span class="info-icon info-bank"></span></dt>
+            <dd>
+              <p class="font16">银行信息</p>
+              <p class="font12 gray">资金安全，支付省心</p>
+            </dd>
+            <span class="rtbox" id="userInfo_bankcardText"><em class="gray">添加</em><em class="rtarrow icon"></em></span>
+          </dl>
+          <!-- 绑定手机-->
+          <dl class="clearfix" data-t="href" data-v="modifyphone">
+            <dt><span class="info-icon info-phone"></span></dt>
+            <dd>
+              <p class="font16">绑定手机</p>
+              <p class="font12 gray" id="userInfo_bindMobile_mobile">保障账户更安全</p>
+            </dd>
+            <span class="rtbox"><em class="gray" id="userInfo_bindMobile_text">绑定</em><em class="rtarrow icon"></em></span>
+          </dl>
+          <!-- 绑定微信-->
+          <dl class="clearfix" data-t="href" data-v="bindWX" id="userInfo_bindWX_dl">
+            <dt><span class="info-icon info-wx"></span></dt>
+            <dd>
+              <p class="font16">绑定微信</p>
+              <p class="font12 gray" id="userInfo_bindWX_r">绑定后可用微信直接登录</p>
+            </dd>
+            <span class="rtbox"><em class="gray" id="userInfo_bindWX_text">已绑定</em><em class="rtarrow icon"></em></span>
+          </dl>
+        </div>
+	</section>
+  <footer>
+    <div id="div-butn" >
+      <input id="Photograph" type="button" value="拍照上传">
+      <input id="Album" type="button" value="相册上传">
+      <input id="inp_but" type="button" value="取消">
+      <!-- <button>取消</button> -->
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>

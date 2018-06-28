@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css" />
+</head>
+
+<body> 
+<div class="wrapper">
+	<header class="header">
+		<p class="head_lf" id="bindBank_backObj"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">添加银行卡</h3>
+	</header>
+	<section class="centerWrap" >
+		<ul class="srh_con mb40">
+			<li class="act_box"><span class="font16">开户姓名：</span><input type="text" placeholder="请输入姓名" id="bindBank_ssObj" value=""></li>
+
+			<li class="act_box"><span class="font16">手机号码：</span><input type="text" placeholder="请输入手机号码" id="bindBank_bankiphoneObj" value=""></li>
+			<p style="padding-left:10px;font-size:16px;color:#ff5024;">银行卡信息</p>
+			<li class="act_box" id="bindBank_shwoBankListObj" onchange="getBank()">
+				<span class="font16">发卡银行：</span>
+				<select id="bindBank_cardWrap">
+                </select>
+            </li>
+			<li class="act_box" id="cityPickerCtrl" onload="init()">
+				<span class="font16">省份城市：</span>
+				<select id="province" style="width:30%;height: 22px;" onchange="getProvince()"> 
+					<option >--请选择--</option>
+					<option value= 0 >北京</option> 
+					<option value= 1 >上海</option> 
+					<option value= 2 >天津</option> 
+					<option value= 3 >重庆</option> 
+					<option value= 4 >河北</option> 
+					<option value= 5 >山西</option> 
+					<option value= 6 >内蒙古</option> 
+					<option value= 7 >辽宁</option> 
+					<option value= 8 >吉林</option> 
+					<option value= 9 >黑龙江</option> 
+					<option value= 10 >江苏</option> 
+					<option value= 11 >浙江</option> 
+					<option value= 12 >安徽</option> 
+					<option value= 13 >福建</option> 
+					<option value= 14 >江西</option> 
+					<option value= 15 >山东</option> 
+					<option value= 16 >河南</option> 
+					<option value= 17 >湖北</option> 
+					<option value= 18 >湖南</option> 
+					<option value= 19 >广东</option> 
+					<option value= 20 >广西</option> 
+					<option value= 21 >海南</option> 
+					<option value= 22 >四川</option> 
+					<option value= 23 >贵州</option> 
+					<option value= 24 >云南</option> 
+					<option value= 25 >西藏</option> 
+					<option value= 26 >陕西</option> 
+					<option value= 27 >甘肃</option> 
+					<option value= 28 >宁夏</option> 
+					<option value= 29 >青海</option> 
+					<option value= 30 >新疆</option> 
+					<option value= 31 >香港</option> 
+					<option value= 32 >澳门</option> 
+					<option value= 33 >台湾</option> 
+				</select>	 
+				<select id="city" style="width:30%;height: 22px;" onchange="getCity()"></select>  	
+			</li>
+			<!-- <li class="act_box"><span class="font16">开户姓名：</span><input type="text" placeholder="请输入姓名" id="bindBank_ssObj" value=""></li> -->
+
+			<li class="act_box"><span class="font16">开户行名：</span><input type="text" placeholder="如建设银行北京分行东直门支行" id="bindBank_bankAddressObj" value=""></li>
+			<li class="act_box"><span class="font16">银行卡号：</span><input type="tel"  placeholder="请填写您的银行卡号" id="bindBank_bankCardNumObj" value=""></li>
+			<li class="act_box"><span class="font16">提现密码：</span><input type="password" placeholder="请输入登录密码" id="bindBank_bankCardPwdObj" value="">
+				<a id="bindBank_cz"  href="javascript:void(0);">重置密码</a>
+			</li>
+			
+		</ul>
+		<p class="center mb35">
+			<a href="javascript:void(0);" id="bindBank_submitObj" class="btn btn_big">确 定</a>
+		</p>
+	</section>
+	<div class="paybot">
+		<p class="w94 mb20 gray font12">温馨提示<br/>
+		1. 开户名必须与身份认证的真实姓名一致<br/>
+		2. 绑定请填写有效借记卡，系统不支持信用卡
+		</p> 
+	</div>
+	<!--<section class="centerWrap" >
+		<ul class="srh_con mb40">
+			<li class="act_box" id="bindBank_shwoBankListObj"><span class="font16">发卡银行：</span>
+				<select id="bindBank_bankLIistObj" style="display:none" class="dw-hsel" tabindex="-1">
+                    <optgroup label="发卡银行" id="bindBank_cardWrap">
+                    </optgroup>
+                </select>
+				<em class="sel_arrow"></em></li>
+			<li class="act_box" id="cityPickerCtrl">
+				<span class="font16">省份城市：</span>
+				<input type="text" readonly="readonly" placeholder="请输入省份城市" value="" class="w70">
+				<em class="sel_arrow"></em>
+			</li>
+			<li class="act_box"><span class="font16">开户行名：</span><input type="text" placeholder="如建设银行北京分行东直门支行" id="bindBank_bankAddressObj" value=""></li>
+			
+			<li class="act_box"><span class="font16">银行卡号：</span><input type="tel"  placeholder="请填写您的银行卡号" id="bindBank_bankCardNumObj" value=""></li>
+			<li class="act_box"><span class="font16">登录密码：</span><input type="password" placeholder="请输入登录密码" id="bindBank_bankCardPwdObj" value=""></li>
+		</ul>
+		<p class="center mb35">
+			<a href="javascript:void(0);" id="bindBank_submitObj" class="btn btn_big">确 定</a>
+		</p>
+	</section>
+	<div class="city-picker" id="cityPicker">
+		<div class="main">
+			<div class="hd" id="pickerHead">
+				<span>省份</span>-<span>城市</span>
+			</div>
+			<div class="bd" id="pickerBody">
+				<div class="item">
+					<select name="" id="province">
+					</select>
+				</div>
+				<div class="item">
+					<select name="" id="city">
+					</select>
+				</div>
+			</div>
+			<div class="ft">
+				<ul>
+					<li id="pickerCancel">取消</li>
+					<li id="pickerSubmit">确定</li>
+				</ul>
+			</div>
+		</div>
+		<div class="city-picker-cover"></div>
+	</div>-->
+</div>
+</body>
+
+</html>

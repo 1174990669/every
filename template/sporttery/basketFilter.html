@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+</head>
+<body>
+<div class="wrapper" id="basketFilter_filterObj">
+	<header class="header">
+		<p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">赛事筛选</h3>
+	</header>
+	<section class="centerWrap">
+		<div class="inwrap mb8">
+			<p class="toptit">让分</p>
+			<p class="options opt2 clearfix">
+				<span data-t="filter" data-k="rq" data-v="1">主让客-</span>
+				<span data-t="filter" data-k="rq" data-v="2">客让主+</span>
+			</p>
+		</div>
+		<div class="inwrap mb8 match_wrap">
+			<p class="toptit">大小分</p>
+			<p class="options opt4 clearfix">
+				<span data-t="filter" data-k="dxf" data-v="1">170-</span>
+				<span data-t="filter" data-k="dxf" data-v="2">170-190</span>
+				<span data-t="filter" data-k="dxf" data-v="3">190-210</span>
+				<span data-t="filter" data-k="dxf" data-v="4">210+</span>
+			</p>
+		</div>
+		<div class="inwrap mb8 match_wrap">
+			<p class="toptit">赛事</p>
+			<p class="options opt4 clearfix" id="basketFilter_leagueWrap">
+			<!--{foreach  from=$leagueList key=leagueId item=league}
+				<span data-t="filter"  data-k="leagueId" data-v="{$leagueId}">{$league.name}</span>
+			{/foreach}-->
+			</p>
+		</div>
+        <div class="center" id="basketFilter_clear" >清空条件</div>
+		<div style="height:70px;"></div>
+	</section>
+	<div class="in_result">
+		<p class="center">
+			<div class="bottomcon">
+				<div class="btnwrap center">
+					<a href="javascript:void(0)" id="basketFilter_filterSubObj" class="btn btn_big">有N场比赛符合条件</a>
+				</div>
+			</div>
+		</p>
+	</div>
+</div>
+</body>
+
+</html>

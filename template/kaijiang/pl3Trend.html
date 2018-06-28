@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+</head>
+<body>
+<div class="wrapper" id="pl3Trend_lotteryObj">
+	<section class="topfix centerWrap_1"><!-- topfix -->
+		<header class="header">
+			<p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+			<h3 class="head_cn"><span class="dlt_tit" data-t="showupdplay" id="pl3Trend_playTitleObj">排列三-直选<em class="down"></em></span></h3>
+			<p class="head_rt"><span class="seticon icon" data-t="showSet"></span></p>
+		</header>
+		<div class="tzhu_style centerWrap clearfix p3" id="pl3Trend_updataPlayObj" style="display:none;">
+			<p data-t="updatelottery" data-v="IP" data-cn="直选" class="selected"><span class="botborder">直 选</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+			<p data-t="updatelottery" data-v="UP3" data-cn="组三"><span class="botborder">组 三</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+			<p data-t="updatelottery" data-v="UP6" data-cn="组六"><span class="botborder">组六</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+			<p data-t="updatelottery" data-v="IH" data-cn="直选和值"><span class="botborder">直选和值</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+			<p data-t="updatelottery" data-v="UH3" data-cn="组三和值"><span class="botborder">组三和值</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+			<p data-t="updatelottery" data-v="UH6" data-cn="组六和值"><span class="botborder">组六和值</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+		</div>	
+		<ul class="comtab trend_tab comtab3 clearfix">
+			<li data-t="updateTrendName" data-v="HM" class="on"><span>号码</span></li>
+			<li data-t="updateTrendName" data-v="YL"><span>遗漏</span></li>
+			<li data-t="updateTrendName" data-v="LR" ><span>冷热</span></li>
+		</ul>
+		<div class="trend_top font12 whitebg">
+			<div class="trend_qh gray">
+				<span id="pl3Trend_titleFirstObj" data-t="sortDom" data-k="title@0"></span>
+			</div>
+			<div class="numwrap" id="pl3Trend_titleConObj">
+			</div>
+		</div>
+	</section>
+	<section>
+		<div style="height:101px;"></div>
+		<!-- 走势 -->
+		<div class="trend_con gray font12">
+			<div class="trend_qh" id="pl3Trend_listFirstObj">
+			</div>
+			<div class="numwrap" id="pl3Trend_listConObj">
+			</div>
+		</div>
+		<!-- <div class="trend_info whitebg gray" id="pl3Trend_explainObj" style="display:none;">
+		</div> -->
+	</section>
+	<div style="height:78px;"></div>
+	<section class="bottomcon" style="display:;"><!-- bottomcon -->
+		<div class="trend_bet font12 whitebg">
+			<div class="trend_qh">
+				<span id="pl3Trend_betFirstObj"></span>
+			</div>
+			<div class="numwrap" id="pl3Trend_betConObj"> 
+			</div>
+		</div>
+		<div class="trend_selected font12 clearfix" id="pl3Trend_betObj" style="display:none;">
+			<div class="yx fl">
+				<span>已选</span>
+			</div>
+			<div class="yxcon fl clearfix fontred" id="pl3Trend_selectObj">
+			</div> 
+		</div>
+		<div class="bet bor_top clearfix">
+			<p class="fl bet_lf" data-t="delAll"><a href="javascript:void(0);" class="btn_del"><span class="delicon icon"></span></a></p>
+			<p class="fl bet_mid" id="pl3Trend_betMoneyObj" style="display:none;">
+				<span class="fontred">0</span>注 <span class="fontred">0</span>元
+			</p>
+			<p class="fl bet_mid" id="pl3Trend_qhObj">
+				029期离截止<span class="fontred">19:00</span>
+			</p>
+			<p class="fr bet_rt" data-t="subData" id="pl3Trend_subObj"><a href="javascript:void(0);" class="btn_buy">提 交</a></p>
+		</div>
+	</section>
+	<div class="overlayer" style="display:none;" id="pl3Trend_setObj">
+		<div class="bottomcon">
+			<div class="trend_set">
+				<h3 class="center mb10">走势设置</h3>
+				<div class="setcon">
+					<dl class="clearfix">
+						<dt>期数</dt>
+						<dd>
+							<span data-t="updateData" data-v="num_30">近30期</span><span class="on" data-t="updateData" data-v="num_50">近50期</span><span data-t="updateData" data-v="num_100">近100期</span>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>遗漏</dt>
+						<dd>
+							<span class="on" data-t="updateData" data-v="showYL_show">显示</span><span data-t="updateData" data-v="showYL_hide">隐藏</span>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>统计</dt>
+						<dd>
+							<span class="on" data-t="updateData" data-v="statistics_show">显示</span><span  data-t="updateData" data-v="statistics_hide">隐藏</span>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<p class="btn_simple">
+				<a href="javascript:void(0);" data-t="resSet" class="w50"><span class="first">取消</span></a><a href="javascript:void(0);" data-t="subSet" class="w50"><span>确定</span></a>
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

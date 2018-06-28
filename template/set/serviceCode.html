@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+</head>
+<body>
+<div class="wrapper" id="serviceCode_wrapperObj">
+	<header class="header">
+		<p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">专属客服</h3>
+	</header>
+	<section class="centerWrap">
+        <ul class="srh_con mb40">
+          <li class="act_box"><span class="font16">邀请码：</span><input type="text" placeholder="请输入5位邀请码" id="serviceCode_code" value=""></li>
+        </ul>
+        <p class="center mb35">
+          <a href="javascript:void(0);" class="btn btn_big" id="serviceCode_getInfo">确 定</a>
+        </p>
+    </section>
+	<div class="paybot">
+        <p class="w94 mb20 gray font12">温馨提示<br>
+        1. 填写邀请码只为了方便客户服务<br>
+        2. 邀请码一经提交不可更改，请谨慎填写。
+        </p>
+    </div>
+    <div class="overlayer" style="display:none;" id="serviceCode_layer">
+        <div class="bottomcon">
+          <div class="playtip">
+            <h3>提 示</h3>
+            <p class="font14">确定选择<span id="serviceCode_name"></span>为专属客服吗？</p>
+          </div>
+          <p class="btn_simple">
+            <a href="javascript:void(0)" class="w50" id="serviceCode_cancel"><span class="first">取消</span></a><a href="javascript:void(0)" class="w50" id="serviceCode_submit"><span>确定</span></a>
+          </p>
+        </div>
+   </div>
+</div>
+</body>
+
+</html>

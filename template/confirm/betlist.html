@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+
+
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header" id="confirm_headObj">
+		<p class="head_lf" id="confirm_backbtn"><span class="backicon icon"></span></p>
+		<h3 class="head_cn" id="confirm_cnName"></h3>
+	</header>
+	<section class="centerWrap"  id="confirm_betSectionObj">
+		<div class="jxcon clearfix">
+			<div class="jx_tab"><span data-t="add" data-v="1"><i>+</i>机选1注</span></div>
+			<div class="jx_tab"><span data-t="add" data-v="5"><i>+</i>机选5注</span></div>
+			<div class="jx_tab"><span data-t="add" data-v="continue"><i>+</i>继续选号</span></div>
+		</div>
+        
+        <div class="listbg_1"></div>
+        <div class="listbg_2"></div>
+		<div class="betlist">
+			<!--<div class="listbg"></div>-->
+			<div class="listwrap">
+				<div id="confirm_betListTipsObj" class="nolist" style="display:none;">
+					<p class="center gray">机选1注试试</p>
+				</div>
+				<div class="lists" id="confirm_betListObj">
+				</div>
+				<div class="lastbox">
+					<p>
+						<label data-t="agr"><em class="icon checkbox checked reg_yes"></em>我已阅读并同意<a data-t="xy" href="javascript:void(0);" class="fontblue">《旺旺中彩平台服务协议》</a></label>
+					</p>
+					<span class="delbox" data-t="delall"><em class="icon delicon"></em></span>
+				</div>
+			</div>
+		</div>
+		<div style="height:180px;"></div>
+	</section>
+	<section id="confirm_openHm">
+		
+	</section>
+	<section class="bottomcon" id="confirm_additionalObj">
+		<div class="img_box op_hm_num" id="confirm_hemai" >
+			<img src="images/images/open_hm.png" alt="发起合买"/>
+		</div>
+		<div class="zhuijia">
+			<div class="mb10 zjtip" id="confirm_zjObj" style="display:none">
+				<label class="w50" data-t="zj"><em class="icon checkbox"></em>追加</label>
+				<p class="txt">每注追加1元，最多可中1600万</p>
+			</div>
+			<div class="mb10 clearfix">	
+				<p class="inputbox fl"><span data-t="reduce" data-k="q">－</span><span data-t="per" id="confirm_perInputObj">1期</span><span data-t="increase" data-k="q">＋</span></p>
+				<p class="inputbox fr"><span data-t="reduce" data-k="b">－</span><span data-t="mul" id="confirm_mulInputObj">1倍</span><span data-t="increase" data-k="b">＋</span></p>
+			</div>
+			<p class="mb10 center gray" style="display:none;" id="confirm_bonusOverObj"><label data-t="over"><em class="icon checkbox checked"></em>单期奖金 </label><a data-t="overnum" href="javascript:void(0);" class="link" id="confirm_overInputObj">3000元</a> 停止追号</p>
+		</div>
+		<div class="bet clearfix">
+			<div class="fl w75">
+                <p class="planbtn" style="display:none" id="confirm_planBtn">
+					<a data-t="gjzh" class="fontblue">高级追号</a></p>
+				<div class="total center">
+					<p class="pt5">共<span class="fontred" id="confirm_moneyObj"></span>元</p>
+					<p class="font12 gray" id="confirm_zhushuObj"></p>
+				</div>
+			</div>
+			<p class="fr w25"><a id="confirm_submit" href="javascript:void(0);" data-t="submit" class="btn_buy">付 款</a></p>
+		</div>
+		<div class="keyboard key3" style="display:none;" id="confirm_overNumObj">
+			<ul>
+				<li>
+					<span data-t="on" data-v="1"><em>1</em></span>
+					<span data-t="on" data-v="2"><em>2</em></span>
+					<span data-t="on" data-v="3"><em>3</em></span>
+				</li>
+				<li>
+					<span data-t="on" data-v="4"><em>4</em></span>
+					<span data-t="on" data-v="5"><em>5</em></span>
+					<span data-t="on" data-v="6"><em>6</em></span>
+				</li>
+				<li>
+					<span data-t="on" data-v="7"><em>7</em></span>
+					<span data-t="on" data-v="8"><em>8</em></span>
+					<span data-t="on" data-v="9"><em>9</em></span>
+				</li>
+				<li>
+					<span data-t="od"><em class="font18">←</em></span>
+					<span data-t="on" data-v="0"><em>0</em></span>
+					<span data-t="os"><em class="fontblue">确定</em></span>
+				</li>
+			</ul>
+		</div>
+		<div class="keyboard key4" style="display:none;" id="confirm_mulUpdObj">
+			<ul>
+				<li>
+					<span data-t="mn" data-v="1"><em>1</em></span>
+					<span data-t="mn" data-v="2"><em>2</em></span>
+					<span data-t="mn" data-v="3"><em>3</em></span>
+					<span data-t="md"><em class="font18">←</em></span>
+				</li>
+				<li>
+					<span data-t="mn" data-v="4"><em>4</em></span>
+					<span data-t="mn" data-v="5"><em>5</em></span>
+					<span data-t="mn" data-v="6"><em>6</em></span>
+					<span data-t="mv" data-v="10"><em class="fontblue">10倍</em></span>
+				</li>
+				<li>
+					<span data-t="mn" data-v="7"><em>7</em></span>
+					<span data-t="mn" data-v="8"><em>8</em></span>
+					<span data-t="mn" data-v="9"><em>9</em></span>
+					<span data-t="mv" data-v="20"><em class="fontblue">20倍</em></span>
+				</li>
+				<li>
+					<span  data-t="mn" data-v="00"><em>00</em></span>
+					<span data-t="mn" data-v="0"><em>0</em></span>
+                    <span data-t="mv" data-v="" style="display:none"><em class="fontblue">掏空</em></span>  <!-- dlt qxc -->
+					<span data-t="mv" data-v="50"><em class="fontblue">50倍</em></span>
+					<span data-t="ms"><em class="fontblue">确定</em></span>
+				</li>
+			</ul>
+		</div>
+		<div class="keyboard key4" style="display:none;" id="confirm_perUpdObj">
+			<ul>
+				<li>
+					<span data-t="pn" data-v="1"><em>1</em></span>
+					<span data-t="pn" data-v="2"><em>2</em></span>
+					<span data-t="pn" data-v="3"><em>3</em></span>
+					<span data-t="pd"><em class="font18">←</em></span>
+				</li>
+				<li>
+					<span data-t="pn" data-v="4"><em>4</em></span>
+					<span data-t="pn" data-v="5"><em>5</em></span>
+					<span data-t="pn" data-v="6"><em>6</em></span>
+					<span data-t="pv" data-v="12" id="confirm_monthNum"><em class="fontblue">一月</em></span>
+				</li>
+				<li>
+					<span data-t="pn" data-v="7"><em>7</em></span>
+					<span data-t="pn" data-v="8"><em>8</em></span>
+					<span data-t="pn" data-v="9"><em>9</em></span>
+					<span data-t="pv" data-v="80" id="confirm_halfYearNum"><em class="fontblue">半年</em></span>
+				</li>
+				<li>
+					<span data-t="pn" data-v="00"><em>00</em></span>
+					<span data-t="pn" data-v="0"><em>0</em></span>
+					<span data-t="pv" data-v="153" id="confirm_yearNum"><em class="fontblue">全年</em></span>
+					<span data-t="ps"><em class="fontblue">确定</em></span>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<div class="tip_con" style="display:none;">
+		<div class="tip_box">
+			<span class="icon suc_icon"></span>投注成功
+		</div>
+	</div>
+    <div class="overlayer" style="display:none;" id="confirm_delTipsObj" data-t="hideDel">
+		<div class="bottomcon" data-t="nohide">
+			<div class="playtip">
+				<h3>删除提示</h3
+					>
+				<p class="font14 center">是否删除所有投注内容？</p>
+			</div>
+			<p class="btn_simple">
+				<a href="javascript:void(0);" data-t="clearDel" class="w50"><span class="first">取消</span></a><a href="javascript:void(0);" data-t="subDel" class="w50"><span>确定</span></a>
+			</p>
+		</div>
+	</div>
+    <div class="overlayer" style="display:none;" id="confirm_updBetTipsObj" data-t="hideDel">
+		<div class="bottomcon" data-t="nohide">
+			<div class="playtip">
+				<h3>过期提示</h3>
+				<p class="font14 center">投注期已截期，是否投注到当前可购买期？</p>
+			</div>
+			<p class="btn_simple">
+				<a href="javascript:void(0);" data-t="clearBet" class="w50"><span class="first">取消</span></a><a href="javascript:void(0);" data-t="subUpdBet" class="w50"><span>确定</span></a>
+			</p>
+		</div>
+	</div>
+</div>
+<div id="confirm_slowLoading" style="position:absolute;left:49%;top:40%;z-index:100;display:none;"><img src="images/new/veryhuo.gif" /></div>
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" /> 
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+<style>
+	/*.swiper-container-horizontal:last-child{display: none;}*/
+	/*天天中彩*/
+</style>
+</head>
+<body>
+  <!-- <div class="swiper-container" >
+    <div class="swiper-wrapper" id="home_bannerImgObj">
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div id="right1" class="swiper-button-next "></div>
+    <div id="left1" class="swiper-button-prev "></div>
+  </div> -->
+
+   <script>
+   	/*var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      	centeredSlides: true,
+      	loop:true,
+      	speed: 400,
+	    autoplay: 2500,
+	    loop: true,
+	    disableOnInteraction: false,
+        pagination:'.swiper-pagination',
+        prevButton:".swiper-button-prev",//前进按钮  
+        nextButton:".swiper-button-next",//后退按钮  
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true//修改swiper的父元素时，自动初始化swiper
+
+    });*/
+   </script>
+
+<div class="wrapper" id="home_wrapObj">
+	<!--<header class="header head-aishi">
+    	<p class="head_lf" id="home_wifiImg" style="display:none"><img src="images/new/wifi.gif" width=18/></p>
+		<h3 class="head_cn">天天中彩彩票</h3> 
+        <div class="wifiStatus" id="home_wifiStatus" style="display:none"></div>
+        <p class="head_rt"  id="home_imWrap" style="display:none">
+			<span class="msgicon_1"></span>
+			<span class="im-num" id="home_imNum" style="display:none"></span>
+		</p>
+	</header>-->
+
+	<section class="centerWrap" id="home_wrap" style="padding: 0;">
+		
+		<div class="banner" style="background:#ff2c01;">
+			<div class="banner" style="width: 90%;margin:10px auto 0;">
+				<ul class="banner_scroll" id="home_bannerImgObj">
+					<li data-v="/activity/regnewBonus" data-weburl="" style="transition: all 0s ease; transform: translate3d(0px, 0px, 0px);">
+						<a><img src="http://join.huohuotuan.cn/expert/ban.png"></a>
+						<!-- <a><img src="http://files.91zbl.cn:8080/images/app/roll/59ca215a2ee9c.png"></a> -->
+					</li>
+                    <!-- <li><a href="javascript:void(0);"><img src="images/defBanner.jpg"></a></li> -->
+					<!--<li>
+						<p style="text-align:center;margin-top:30px;">加载中.....</p>
+
+					</li>-->
+                    <!--<li data-v="/jczq" ><a href="javascript:void(0);"><img src="http://files.cailebang.com/images/app/roll/56cecc60a5d2d.png"></a></li> -->
+				</ul>
+			</div>
+			<div class="page_scroll" ><p class="page" id="home_bannerNavWarpObj"></p></div>
+			<div id="back-white"></div>
+		</div>
+       <!-- <nav class="" >
+			<ul class="nav nav-main clearfix">
+				<li data-t="news">
+					<a href="javascript:void(0);">
+						<p><em class="icons i-news"></em></p>
+						<span class="nav_name">新闻资讯</span>
+					</a>
+				</li>
+				<li data-t="chart">
+					<a href="javascript:void(0);" >
+						<p><em class="icons i-trend"></em></p>
+						<span class="nav_name">走势图表</span>
+					</a>
+				</li>
+				<li data-t="localSite">
+					<a href="javascript:void(0);" >
+						<p><em class="icons i-site"></em></p>
+						<span class="nav_name">附近站点</span>
+					</a>
+				</li>
+				<li data-t="activityIdx">
+					<a href="javascript:void(0);" >
+						<p><em class="icons i-act"></em></p>
+						<span class="nav_name">活动专区</span>
+					</a>
+				</li>
+			</ul>
+		</nav>-->
+        <div class="newstop mb8 clearfix" id="home_topNews" style="border-radius:30px;">
+    		<div class="newstop-lf center fl"><a href="javascript:void(0)" data-t="newsIdx"><span style="font-weight:800;font-size:1rem;color:#ff3660;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;">头条新闻</span></a></div>
+            <div id="home_scrollBox" class="news-scroll">
+	    		<ul class="newstop-list fl" id="home_newsBox1"></ul>
+	            <ul class="newstop-list fl" id="home_newsBox2"></ul>
+            </div>
+		</div> 
+		<div class="recomList mb8 clearfix" id="homeObj_recomObj" style="display: none;padding:0;">
+    		<div class="recomList_header" style="background:#fff;padding:3%; ">
+    			<img id="img-h4" src="images/0905/hot1.png" alt="">
+    			<h4>热门赛事</h4>
+    			<p data-t="goMore">查看更多  ＞</p>
+    		</div>
+    		<!-- <ul id="homeObj_recomList" style="padding: 0 3%;"> -->
+    		<ul id="homeObj_recomList">
+    			
+    		</ul>
+    		
+    	</div>
+    	<div style="padding-bottom:8px;background:#fff; ">
+			<img style="width:24px;height:22px;float:left;padding:10px 0 0 2%;" src="images/0905/hot2.png" alt="">
+			<p style="font-size:16px;padding:8px 0 0 11%;">热门彩票</p>
+		</div>
+    	<!--
+        <div class="active_con act2 mb8" id="home_actCon">
+          <ul>
+            <li>
+              <a id="home_actReg">
+                <h3>注册送礼</h3>
+                <p><span class="active_pic a1"></span></p>
+              </a>
+            </li>
+            <li>
+              <a id="home_actInv">
+                <h3>邀请送礼</h3>
+                <p><span class="active_pic a4"></span></p>
+              </a>
+            </li>
+			  
+            <li>
+              <a href="javascript:void(0)">
+                <h3>充值送礼</h3>
+                <p><span class="active_pic a5"></span></p>
+              </a>
+            </li>
+           
+          </ul>
+        </div>
+ -->
+ <!--
+        <div class="active_con clearfix mb8" id="home_footObj">
+			<dl class="act-aish clearfix fl" data-t="chart">
+				<dt class="fl">
+				<p class="aish-trend"><img src="images/aish-trend.png"></p>
+				</dt>
+				<dd class="fr">
+					<p class="font16">数据走势</p>
+					<p class="font12 gray">想提高中奖率，这里很有料！</p>
+				</dd>
+			</dl>
+			<dl class="act-aish clearfix fl" data-t="scorePrize">
+              <dt class="fr"><span class="acticon a-score"></span></dt>
+              <dd class="fl">
+                <p class="fontblue">积分来袭</p>
+                <p class="font12 gray">好礼送不停！</p>
+              </dd>
+            </dl>
+        </div>
+        -->
+       <!-- <div class="actwrap mb8 clearfix" id="home_actCon">
+    		<div class="actwrap-lf fl center" id="home_scorePrize">
+    			<a href="javascript:void(0);"><span class="acticon a-luck"></span></a>
+    		</div>
+    		<div class="actwrap-rt fl">
+    			<dl class="act-dl clearfix" id="home_act1">
+    				<dt class="fr">
+    					<span class="acticon a-hb"></span>
+    				</dt>
+    				<dd class="fl">
+    					<p class="fontred">注册送积分</p>
+    					<p class="font12 gray">体彩更精彩！</p>
+    				</dd>
+    			</dl>
+    			<dl class="act-dl clearfix" id="home_act2">
+    				<dt class="fr">
+    					<span class="acticon a-share"></span>
+    				</dt>
+    				<dd class="fl">
+    					<p class="fontblue">分享送积分</p>
+    					<p class="font12 gray">赢更多奖品！</p>
+    				</dd>
+    			</dl>
+    		</div>
+    	</div>-->
+		<!--<div class="trd-img" id="home_goChart"><a href="javascript:void(0)"><img src="images/trend.png"></a></div>-->
+		<!--<div class="lottery_con">
+			<ul class="lottery_ul clearfix" id="home_lotteryUlObj"><li data-t="lottery" data-v="dlt"><a href="javascript:void(0)"><div class="lot_icon dlt01 fl"></div><div class="lot_name fl"><h3>大乐透</h3><p>2元赢500万</p></div></a></li><li data-t="lottery" data-v="pl3"><a href="javascript:void(0)"><div class="lot_icon pl301 fl"></div><div class="lot_name fl"><h3>排列三</h3><p>天天开奖</p></div></a></li><li data-t="lottery" data-v="pl5"><a href="javascript:void(0)"><div class="lot_icon pl501 fl"></div><div class="lot_name fl"><h3>排列五</h3><p>2元赢10万</p></div></a></li><li data-t="lottery" data-v="qxc"><a href="javascript:void(0)"><div class="lot_icon qxc01 fl"></div><div class="lot_name fl"><h3>七星彩</h3><p>2元赢500万</p></div></a></li><li data-t="lottery" data-v="jczq"><a href="javascript:void(0)"><div class="lot_icon jczq01 fl"></div><div class="lot_name fl"><h3>竞足混投</h3><p>2元赢10万</p></div></a></li><li data-t="lottery" data-v="jz2x1"><a href="javascript:void(0)"><div class="lot_icon jz2x101 fl"></div><div class="lot_name fl"><h3>竞足2选1</h3><p>中奖更容易</p></div></a></li><li data-t="lottery" data-v="spf14"><a href="javascript:void(0)"><div class="lot_icon spf1401 fl"></div><div class="lot_name fl"><h3>胜负彩</h3><p>猜胜平负赢500万</p></div></a></li><li data-t="lottery" data-v="spf9"><a href="javascript:void(0)"><div class="lot_icon spf901 fl"></div><div class="lot_name fl"><h3>任选九</h3><p>14场选9赢大奖</p></div></a></li>
+            <li data-t="lottery" data-v="gd11x5"><a href="javascript:void(0)"><div class="lot_icon gd11x501 fl"></div><div class="lot_name fl"><h3>11选5</h3><p>10分钟1期</p></div></a></li>
+            </ul>
+        </div>-->
+        <div class="mb8" style="">
+           <!-- <div class="newtit clearfix">
+                    <span class="fl">模拟选号</span>
+                    <a href="javascript:void(0);" class="fr gray" id="home_moreLot">更多&gt;</a>
+            </div>-->
+
+            <ul class="lottery_ul clearfix" id="home_lotteryUlObj">
+				<!--
+    			<li data-t="lottery" data-v="dlt">
+    				<a href="javascript:void(0);">
+	    				<span class="lot_icon dlt01 fl"></span>
+						<div class="lot_name fl">
+							<h3>大乐透</h3>
+							<p>奖池：<span class="money" style="display:none">11.25亿</span></p>
+							<span class="acticon a-jiaj" style="display:none">加奖</span>
+						</div>
+						<span class="acticon a-kaij" style="display:none"><em>今日开奖</em></span>
+					</a>
+    			</li>
+    			<li data-t="lottery" data-v="jczq">
+    				<a href="javascript:void(0);">
+	    				<span class="lot_icon jczq01 fl"></span>
+						<div class="lot_name fl">
+							<h3>竞彩足球</h3>
+							<p>中奖更容易</p>
+						</div>
+					</a>
+    			</li>
+    			<li data-t="lottery" data-v="gd11x5">
+    				<a href="javascript:void(0);">
+	    				<span class="lot_icon tjsyy01 fl"></span>
+						<div class="lot_name fl">
+							<h3>11选5</h3>
+							<p>10分钟1期</p>
+						</div>
+					</a>
+    			</li>
+    			<li data-t="lottery" data-v="pl3">
+    				<a href="javascript:void(0);">
+	    				<span class="lot_icon pl301 fl"></span>
+						<div class="lot_name fl">
+							<h3>排列三</h3>
+							<p>天天开奖</p>
+						</div>
+					</a>
+    			</li>
+    			-->
+    		</ul>
+        </div>
+       <!-- <div class="news-wrap">
+    		<div class="newtit clearfix">
+    			<span class="fl">今日要闻</span>
+    			<a href="javascript:void(0)" class="fr gray" id="home_moreNews">更多&gt;</a>
+    		</div>
+    		<div class="news-con" id="home_botNews">
+
+	    	</div>
+    	</div>-->
+		<!--<div class="active_con" id="home_footObj" style="display:none">
+			<ul>
+				<li data-t="js">
+					<a href="javascript:void(0);">
+						<h3>注册送礼</h3>
+						<p><span class="active_pic a1"></span></p>
+					</a>
+				</li>
+			    	<li data-t="scorePrize">
+					<a href="javascript:void(0);">
+						<h3>积分抽奖</h3>
+						<p><span class="active_pic a2"></span></p>
+					</a>
+				</li>
+				<li data-t="fjzd">
+					<a href="javascript:void(0);">
+						<h3>附近站点</h3>
+						<p><span class="active_pic a3"></span></p>
+					</a>
+				</li>
+			</ul>
+		</div>-->
+
+	</section>
+	<div class="home_regnewBonus" id="home_regnewBonus" style="display: none;">
+		
+		<div class="img_box regnewBonus_img">
+			<img id="regnewBonus_img" src="images/activity/act_b08.png" alt="新人红包大礼"/>
+		</div>
+		<div class="img_box regnewBonus_no" id="regnewBonus_no">
+			<img id="regnewBonus_no" src="images/activity/act_no.png"/>
+		</div>
+		<div class="regnewBonus_btn">
+			<p id="regnewBonus_btn">立即领取</p>
+		</div>
+	</div>
+    <div style="height:65px"></div>
+</div>
+
+
+</body>
+
+</html>

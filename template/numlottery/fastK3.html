@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+</head>
+<!-- 天天 -->
+<body>
+<div class="wrapper" id="fastK3_lotteryObj">
+	<header class="header">
+		<p class="head_lf" data-t="backbtn"><span class="backicon icon"></span></p>
+		<h3 class="head_cn"><span class="dlt_tit" data-t="showupdplay" id="fastK3_playTitleObj">快3-和值<em class="down"></em></span></h3>
+		<p class="head_rt" >
+        	<span class="trendicon icon mr10" data-t="zsurl"></span>
+        	<span class="navicon icon" data-t="showTopMenu" ></span>
+        </p>
+	</header>
+	<!-- <div class="tzhu_style clearfix p3 centerWrap" style="display:none;" id="fastK3_updataPlayObj">
+            <div class="tit_fast_1">普通投注</div>
+                <p data-t="updatelottery" data-v="SUM" class="selected"><span class="botborder hnsjy"><em>和值</em><br><em class="hn-prize">奖金9-240元</em></span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+                <p data-t="updatelottery" data-v="TXD-TX"><span class="botborder hnsjy"><em>三同号</em><br><em class="hn-prize">奖金40-240元</em></span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+               <p data-t="updatelottery" data-v="TX"><span class="botborder">三同号通选</span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p> 暂未开放
+                <p data-t="updatelottery" data-v="TXD2-TXS2"><span class="botborder hnsjy"><em>二同号</em> <br><em class="hn-prize">奖金15-80元</em></span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+               <p data-t="updatelottery" data-v="TXS2"><span class="botborder">二同号复选</span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>  暂未开放
+                <p data-t="updatelottery" data-v="BT3-LTX"><span class="botborder hnsjy"><em>三不同</em> <br><em class="hn-prize">奖金10-40元</em></span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+                <p data-t="updatelottery" data-v="BT2"><span class="botborder hnsjy"><em>二不同</em> <br><em class="hn-prize">奖金8元</em></span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+            <div class="tit_fast_1 spe">胆拖玩法</div>  暂未开放
+                   <p data-t="updatelottery" data-v="BT3" data-d="D"><span class="botborder hnsjy"><em>三不同</em> <br><em class="hn-prize">奖金10-40元</em></span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+                <p data-t="updatelottery" data-v="BT2" data-d="D"><span class="botborder hnsjy" style="border-right:1px solid #55b0f5"><em>二不同</em> <br><em class="hn-prize">奖金8元</em></span> <em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+    </div> -->
+    <div class="tzhu_style clearfix p3 centerWrap" >
+        <p id="upda_SUM" data-t="updatelottery" data-v="SUM" class="update_sele">和值</p>
+        <p id="upda_TXD" data-t="updatelottery" data-v="TXD-TX" class="update_sele">三同号</p>
+        <p id="upda_TXD2" data-t="updatelottery" data-v="TXD2-TXS2" class="update_sele">二同号 </p>
+        <p id="upda_BT3" data-t="updatelottery" data-v="BT3-LTX" class="update_sele">三不同 </p>
+        <p id="upda_BT2" data-t="updatelottery" data-v="BT2" class="update_sele">二不同 </p>
+    </div>
+	<div class="navlist" style="display:none;" id="fastK3_topMenuLayer">
+		<span class="nav_arrow statebg"></span>
+		<ul>
+			<li data-t="kjurl"><a href="javascript:void(0);">历史开奖</a></li>
+			<li data-t="jjurl"><a href="javascript:void(0);">玩法说明</a></li>
+		</ul>
+	</div>
+	<section class="centerWrap" id="fastK3_betWrap">
+        <p style="position:absolute;background:transparent;width:100%;top:88px;z-index:99" data-t="showK3ChartList">
+            <span style="color:transparent;">期号正在获取中</span><i class="i-null"></i>
+        </p>
+        <p class="current fixTopTit_4" id="fastK3_qhObj">期号正在获取中</p>
+        <!-- <i class="i-null"></i> -->
+		<div class="history">
+			
+			<div id="fastK3_chartScroll">
+				<div class="list" id="fastK3_chartList">
+				</div>
+			</div>
+			<p style="display:none;" class="arrowmore center" data-t="showK3ChartList" id="fastK3_showK3ChartList"><span class="more"><em class="arrow trans"></em></span></p>
+		</div>
+		<div class="ballcon">
+			<div class="listcon">
+				<div class="tit gray selTitleObj">
+					<p><span class="fontred font14 mr10"><b>·</b></span> 至少选1个号码</p>
+					<div class="tit_rt">
+						<div class="jixuan p3">
+							<span data-t="random" data-k=""><em class="icon phone"></em>机选</span><span></span>
+						</div>
+					</div>
+				</div>
+				<div class="betObj" data-v="SUM">
+					<fieldset class="num_fgx z3">
+                        <div class="redpart ball_block selectObj">
+                            <p class="clearfix ball_dubble block4" data-v="0">
+                               <!-- <span class="ball" data-t="selectnum" data-v="3" data-k="0">
+                                    <em>3</em>
+                                    <em class="k-dubble">奖金240元</em>
+                                </span>-->
+                                <span class="ball" data-t="selectnum" data-v="4" data-k="1">
+                                    <em>4</em>
+                                    <em class="k-dubble">奖金80元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="5" data-k="2">
+                                    <em>5</em>
+                                    <em class="k-dubble">奖金40元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="6" data-k="3">
+                                    <em>6</em>
+                                    <em class="k-dubble">奖金25元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="7" data-k="4">
+                                    <em>7</em>
+                                    <em class="k-dubble">奖金16元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="8" data-k="5">
+                                    <em>8</em>
+                                    <em class="k-dubble">奖金12元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="9" data-k="6">
+                                    <em>9</em>
+                                    <em class="k-dubble">奖金10元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="10" data-k="7">
+                                    <em>10</em>
+                                    <em class="k-dubble">奖金9元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="11" data-k="8">
+                                    <em>11</em>
+                                    <em class="k-dubble">奖金9元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="12" data-k="9">
+                                    <em>12</em>
+                                    <em class="k-dubble">奖金10元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="13" data-k="10">
+                                    <em>13</em>
+                                    <em class="k-dubble">奖金12元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="14" data-k="11">
+                                    <em>14</em>
+                                    <em class="k-dubble">奖金16元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="15" data-k="12">
+                                    <em>15</em>
+                                    <em class="k-dubble">奖金25元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="16" data-k="13">
+                                    <em>16</em>
+                                    <em class="k-dubble">奖金40元</em>
+                                </span>
+                                <span class="ball" data-t="selectnum" data-v="17" data-k="14">
+                                    <em>17</em>
+                                    <em class="k-dubble">奖金80元</em>
+                                </span>
+                               <!-- <span class="ball" data-t="selectnum" data-v="18" data-k="15">
+                                    <em>18</em>
+                                    <em class="k-dubble">奖金240元</em>
+                                </span>-->
+                            </p>						
+                        </div>
+                        <div class="ball_r6 ball_block k3-opt">
+                            <p class="clearfix" data-k="0">
+                                <span class="ball" data-t="quick" data-v="d">大</span><span class="ball" data-t="quick" data-v="x">小</span><span class="ball" data-t="quick" data-v="j">奇</span><span class="ball" data-t="quick" data-v="o">偶</span><span class="ball" data-t="quick" data-v="q">全</span><span class="ball" data-t="quick" data-v="c">清</span>
+                            </p>
+                        </div>
+                    </fieldset>
+                    <p class="center font12 gray mb10">选号与开奖号码之和相符即中奖</p>
+				</div>
+				
+                <div class="betObj" data-v="TXD-TX" style="display:none">
+                    <fieldset class="num_fgx z3">
+                        <div class="redpart ball_block selectObj">
+                            <p class="clearfix block3" data-v="0">
+                                <span class="ball" data-t="selectnum" data-v="1+1+1" data-k="0">111</span>
+                                <span class="ball" data-t="selectnum" data-v="2+2+2" data-k="1">222</span>
+                                <span class="ball" data-t="selectnum" data-v="3+3+3" data-k="2">333</span>
+                                <span class="ball" data-t="selectnum" data-v="4+4+4" data-k="3">444</span>
+                                <span class="ball" data-t="selectnum" data-v="5+5+5" data-k="4">555</span>
+                                <span class="ball" data-t="selectnum" data-v="6+6+6" data-k="5">666</span>
+                            </p>
+                            <p class="center font12 gray mb10">选号与开奖号码相符即中<span class="fontred">240</span>元</p>
+                        </div>
+                    </fieldset>
+               	   <fieldset class="num_fgx z3">
+                        <div class="redpart ball_block selectObj">
+                           
+                            <p class="clearfix ball_dubble block1" data-v="1">
+                                <span class="ball" data-t="selectnum" data-v="255+255+255" data-k="0">
+                                    <em >三同号通选</em>
+                                    <em class="k-dubble">开奖号码相同即中40元</em>
+                                </span>
+                            </p>						
+                        </div>
+                    </fieldset>
+				</div>
+               <!-- <div class="betObj" data-v="TX" style="display:none">
+                	<fieldset class="num_fgx z3">
+                        <div class="redpart ball_block selectObj">
+                           
+                            <p class="clearfix ball_dubble block1" data-v="0">
+                                <span class="ball" data-t="selectnum" data-v="255+255+255" data-k="0">
+                                    <em >3同号通选</em>
+                                    <em class="k-dubble">开奖号码相同即中40元</em>
+                                </span>
+                            </p>						
+                        </div>
+                    </fieldset>
+                    <p class="center font12 gray mb10">选号与开奖号码相符即中<span class="fontred">240</span>元</p>
+                </div>-->
+                <div class="betObj" data-v="TXD2-TXS2" style="display:none">
+                	<fieldset class="num_fgx">
+                        <legend class="gray font12">单选</legend>
+                        <div class="redpart ball_r6 ball_block selectObj">
+                            <p class="clearfix" data-v="0">
+                                <span class="ball" data-t="selectnum" data-v="1+1" data-k="0">11</span><span class="ball" data-t="selectnum" data-v="2+2" data-k="1">22</span><span class="ball" data-t="selectnum" data-v="3+3" data-k="2">33</span><span class="ball" data-t="selectnum" data-v="4+4" data-k="3">44</span><span class="ball" data-t="selectnum" data-v="5+5" data-k="4">55</span><span class="ball" data-t="selectnum" data-v="6+6" data-k="5">66</span>
+                            </p>
+                            
+                        </div>
+                        <div class="redpart ball_r6 ball_block selectObj">
+                        	<p class="clearfix" data-v="1">
+                                <span class="ball" data-t="selectnum" data-v="1" data-k="0">1</span><span class="ball" data-t="selectnum" data-v="2" data-k="1">2</span><span class="ball" data-t="selectnum" data-v="3" data-k="2">3</span><span class="ball" data-t="selectnum" data-v="4" data-k="3">4</span><span class="ball" data-t="selectnum" data-v="5" data-k="4">5</span><span class="ball" data-t="selectnum" data-v="6" data-k="5">6</span>
+                            </p>
+                        </div>
+                    </fieldset>
+                    <p class="center font12 gray mb10">选号与开奖号码相符即<span class="fontred">80</span>元</p>
+                    <fieldset class="num_fgx">
+                        <legend class="gray font12">复选</legend>
+                        <div class="redpart ball_r6 ball_block selectObj">
+                            <p class="clearfix" data-v="2">
+                                <span class="ball" data-t="selectnum" data-v="1+1" data-k="0">11<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="2+2" data-k="1">22<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="3+3" data-k="2">33<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="4+4" data-k="3">44<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="5+5" data-k="4">55<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="6+6" data-k="5">66<var class="rt-star">*</var></span>
+                            </p>
+                        </div>
+                    </fieldset>
+                    <p class="center font12 gray mb10">选号与开奖号码的重号相符即<span class="fontred">15</span>元</p>
+                </div>
+               <!-- <div class="betObj" data-v="TXS2" style="display:none">
+                	<fieldset class="num_fgx">
+                        <legend class="gray font12">复选</legend>
+                        <div class="redpart ball_r6 ball_block selectObj">
+                            <p class="clearfix" data-v="2">
+                                <span class="ball" data-t="selectnum" data-v="1+1" data-k="0">11<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="2+2" data-k="1">22<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="3+3" data-k="2">33<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="4+4" data-k="3">44<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="5+5" data-k="4">55<var class="rt-star">*</var></span><span class="ball" data-t="selectnum" data-v="6+6" data-k="5">66<var class="rt-star">*</var></span>
+                            </p>
+                        </div>
+                    </fieldset>
+                    <p class="center font12 gray mb10">选号与开奖号码的重号相符即<span class="fontred">15</span>元</p>
+                </div>-->
+                <div class="betObj" data-v="BT3-LTX" style="display:none">
+                	<fieldset class="num_fgx">
+                        <div class="redpart ball_r6 ball_block selectObj">
+                            <p class="clearfix block3" data-v="0">
+                            	<span class="ball" data-t="selectnum" data-v="1" data-k="0">1</span>
+                                <span class="ball" data-t="selectnum" data-v="2" data-k="1">2</span>
+                                <span class="ball" data-t="selectnum" data-v="3" data-k="2">3</span>
+                                <span class="ball" data-t="selectnum" data-v="4" data-k="3">4</span>
+                                <span class="ball" data-t="selectnum" data-v="5" data-k="4">5</span>
+                                <span class="ball" data-t="selectnum" data-v="6" data-k="5">6</span>
+                            </p>
+                            <p class="center font12 gray mb10" id="fastK3_bt3Desc1">选号与开奖号码的相符即<span class="fontred">40</span>元</p>
+                        </div>
+                        <div class="redpart ball_block selectObj" id="fastK3_ltxWrap" >
+                           
+                            <p class="clearfix ball_dubble block1" data-v="1">
+                                <span class="ball" data-t="selectnum" data-v="255+255+255" data-k="0">
+                                    <em >三连号通选</em>
+                                    <em class="k-dubble">123/234/345/456任意开出即中10元</em>
+                                </span>
+                            </p>						
+                        </div>
+                    </fieldset>
+                </div>
+                 <div class="betObj" data-v="BT3" style="display:none">
+                	<fieldset class="num_fgx">
+                        <div class="redpart ball_r6 ball_block selectObj">
+                            <p class="clearfix block3" data-v="0">
+                            	<span class="ball" data-t="selectnum" data-v="1" data-k="0">1</span>
+                                <span class="ball" data-t="selectnum" data-v="2" data-k="1">2</span>
+                                <span class="ball" data-t="selectnum" data-v="3" data-k="2">3</span>
+                                <span class="ball" data-t="selectnum" data-v="4" data-k="3">4</span>
+                                <span class="ball" data-t="selectnum" data-v="5" data-k="4">5</span>
+                                <span class="ball" data-t="selectnum" data-v="6" data-k="5">6</span>
+                            </p>
+                        </div>
+                    </fieldset>
+                    <p class="center font12 gray mb10" id="fastK3_bt3Desc1">选号与开奖号码的相符即<span class="fontred">40</span>元</p>
+                </div>
+               <!-- <div class="betObj" data-v="LTX" style="display:none">
+                	<fieldset class="num_fgx z3">
+                        <div class="redpart ball_block selectObj">
+                           
+                            <p class="clearfix ball_dubble block1" data-v="0">
+                                <span class="ball" data-t="selectnum" data-v="255+255+255" data-k="0">
+                                    <em >3连号通选</em>
+                                    <em class="k-dubble">123/234/345/456任意开出即中10元</em>
+                                </span>
+                            </p>						
+                        </div>
+                    </fieldset>
+                    <p class="center font12 gray mb10" id="fastK3_bt3Desc2">选号与开奖号码的相符即<span class="fontred">40</span>元</p>
+                </div>-->
+                <div class="betObj" data-v="BT2" style="display:none">
+                	<fieldset class="num_fgx">
+                        <div class="redpart ball_r6 ball_block selectObj">
+                            <p class="clearfix block3" data-v="0">
+                            	<span class="ball" data-t="selectnum" data-v="1" data-k="0">1</span>
+                                <span class="ball" data-t="selectnum" data-v="2" data-k="1">2</span>
+                                <span class="ball" data-t="selectnum" data-v="3" data-k="2">3</span>
+                                <span class="ball" data-t="selectnum" data-v="4" data-k="3">4</span>
+                                <span class="ball" data-t="selectnum" data-v="5" data-k="4">5</span>
+                                <span class="ball" data-t="selectnum" data-v="6" data-k="5">6</span>
+                            </p>
+                        </div>
+                         <p class="center font12 gray mb10">选号与开奖号码任意2个相符即中<span class="fontred">8</span>元</p>
+                    </fieldset>
+                </div>
+			</div>
+			<!--<p class="center font12 gray mb10" id='fastK3_bonusTipsObj'>选号与开奖号码按位相符即中<span class="fontred">6</span>元</p>-->
+		</div>
+		<div style="height:48px;"></div>
+	</section>
+    <div class="k3-bonus" id="fastK3_sumPrize" style="display:none">
+		<p class="center font12 gray">预期奖金<span class="fontred">6-10</span>元 盈利<span class="fontred">4-8</span>元</p>
+	</div>
+	<section class="bottomcon" style="display:;">
+		<div class="bet clearfix remov">
+			<p class="fl bet_lf" data-t="clear"><a href="javascript:void(0);" class="btn_del"><em class="delicon icon"></em></a></p>
+			<p class="fl bet_mid"><span class="fontred" id="fastK3_zhushuObj">0</span>注 <span class="fontred" id="fastK3_moneyObj">0</span>元</p>
+			<p class="fr bet_rt" data-t="submitBet" id="fastK3_subObj"><a href="javascript:void(0);" class="btn_buy">提 交</a></p>
+		</div>
+	</section>
+	<div class="bottomcon" style="display:none;">
+		<div class="keyboard key5"><ul></ul></div>
+	</div>
+    <div class="overlayer" style="display:none;" id="fastK3_ddTipsObj">
+		<div class="bottomcon">
+			<div class="playtip">
+				<h3>胆拖玩法</h3>
+				<p class="font14">同一号码<span class="fontred">点1次为拖码，2次为胆码，点3次还原</span>，胆码超出后点击自动为拖码。</p>
+			</div>
+			<p class="btn_simple"><a href="javascript:void(0)" class="w100"><span>关闭</span></a></p>
+			
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

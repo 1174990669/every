@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<link rel="stylesheet" href="css/global.css"/>
+
+</head>
+<body>
+<div class="wrapper" id="planRecord_recordObj">
+	<header class="header">
+		<p class="head_lf" data-t="backbtn"><span class="backicon icon"></span></p>
+		<h3 class="head_cn"><span class="dlt_tit" data-t="showupdplay" id="planRecord_playTitleObj">追号订单<em class="down"></em></span></h3>
+		<p class="head_rt" data-t="search"><span class="srhicon icon"></span></p>
+	</header>
+    <div class="tzhu_style clearfix " style="display:none;" id="planRecord_updataPlayObj">
+		<p data-t="updatelottery" data-v="P"><span>全部订单</span></p>
+		<p data-t="updatelottery" data-v="Z" class="selected"><span>追号订单</span><em class="sel-mark"><i class="icon-sm sel-sm"></i></em></p>
+	</div>
+	<section class="centerWrap" id="planRecord_content">
+		<ul class="comtab mb20 clearfix" id="planRecord_titleObj">
+			<li  class="on" data-t="update" data-v="all" style="width:33%"><span>全部</span></li>
+			<li  data-t="update" data-v="ywc" style="width:33%"><span>已完成</span></li>
+			<li  data-t="update" data-v="jxz" style="width:33%"><span>进行中</span></li>
+		</ul>
+		<div class="order_wrap" style="display:none;" id="planRecord_noTipsObj">
+			<div class="noact center">
+				<p>
+					<span class="disbg dis3"></span>
+				</p>
+				<p class="gray mb40">暂无投注记录</p>
+				<p class="gray mb15">这一秒，让梦想绽放</p>
+				<p data-t="betDlt">
+					<a href="javascript:void(0);" class="btn btn_big">投注大乐透</a>
+				</p>
+			</div>
+		</div>
+		<div class="order_wrap" id="planRecord_recordListObj">
+		</div>
+	</section>
+    <a href="javascript:void(0)" style="display:none" id="planRecord_goTop" class="gotop">↑</a>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+</head>
+<body>
+<div class="wrapper" id="account_wrapperObj">
+	<header class="header">
+		<p class="head_lf" id="account_back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">我的账户</h3>
+	</header>
+	<section class="centerWrap">
+		<div class="bluewrap center">
+			<p class="sm-txt">账户总额</p>
+			<p class="font16">￥ <span id="account_total">0</span></p>
+			<p class="sm-txt" id="account_freezeWrap">当前冻结现金<span id="account_freezecash">0</span>元，冻结红包<span id="account_freezebonus"></span>元</p>
+		</div>
+		<div class="account-wrap">
+			<ul class="account_list">
+				<li  data-t="money">
+					<span class="w25 font16 fl">余额</span>
+					<span class="fr" ><em id="account_money">0</em><em class="rtarrow icon"></em></span>
+				</li>
+				<li  data-t="redbag">
+					<span class="w25 font16 fl">红包</span>
+					<span class="fr"><em id="account_redbag">0</em><em class="rtarrow icon"></em></span>
+				</li>
+				<li  data-t="score">
+					<span class="w25 font16 fl">积分</span>
+					<span class="fr"><em id="account_score">0</em><em class="rtarrow icon"></em></span>
+				</li>
+			</ul>
+		</div>
+		<div class="paybot botfixed">
+			<a href="javascript:void(0)" data-t="withdraw">提现</a><a href="javascript:void(0)"  data-t="recharge">充值</a>
+		</div>
+	</section>
+	
+     <div class="overlayer" style="display:none" id="account_authTipsObj" data-t="hideTips">
+        <div class="bottomcon" data-t="nohide">
+            <div class="playtip">
+                <h3>提示</h3>
+                <p class="font14 center">请完善实名认证,才可以继续操作! </p>
+            </div>
+            <p class="btn_simple">
+                <a href="javascript:void(0);" data-t="clearAuthTips" class="w50"><span class="first">取消</span></a><a href="javascript:void(0);" data-t="toAuthTips" class="w50"><span>确定</span></a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

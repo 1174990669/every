@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>高级追号</title>
+</head>
+<body>
+<div class="wrapper" id="plan_wrapperObj">
+	<header class="header">
+		<p class="head_lf" data-t="back"><span class="backicon icon"></span></p>
+		<h3 class="head_cn">高级追号</h3>
+		<p class="head_rt" data-t="help"><span class="qusticon icon"></span></p>
+	</header>
+	<section class="centerWrap">
+		<p class="current" id="plan_qhObj"> <span class="fontred"></span>  <span class="fontred"></span></p>
+		<div class="whitebg">
+			<div class="plantit clearfix">
+				<p class="fl pt5">
+					<span class="mr10" id="plan_planNumObj">追10期 1倍</span><span id="plan_planTypeObj">计划盈利100元</span>
+				</p>
+				<p class="fr">
+					<a href="javascript:void(0);" data-t="set" class="setplan_btn btn">设置计划</a>
+				</p>
+			</div>
+			<table cellpadding="0" cellspacing="0" width="100%" border="0" class="plantab">
+				<tbody id="plan_planDomObj">
+				</tbody>
+			</table>
+		</div>
+		<div style="height:100px;"></div>
+	</section>
+	<section class="bottomcon" style="display:;">
+		<div class="zhuijia">
+			<p class="mb10 center gray"><label data-t="stop"><em class="icon checkbox checked"></em>中奖后停止追号</p>
+		</div>
+		<div class="bet clearfix">
+			<div class="fl w75">
+				<div class="total">
+					<p class="pt15"><span class="fontred" id="plan_lotteryNumObj">100</span>期 <span class="fontred" id="plan_moneyObj">200</span>元</p>
+				</div>
+			</div>
+			<p class="fr w25"><a href="javascript:void(0)" data-t="sub" class="btn_buy" id="plan_submitBtn">付 款</a></p>
+		</div>
+	</section>
+	<div class="overlayer" style="display:none;" id="plan_setObj">
+		<div class="bottomcon">
+			<div class="setplan">
+				<dl class="clearfix">
+					<dt class="pt5">连续追号：</dt>
+					<dd><p class="inputbox mr10"><span data-t="lostSetNum">－</span><span data-t="updateSetNum" id="plan_setNumObj"></span><span data-t="addSetNum">＋</span></p><span>期</span></dd>
+				</dl>
+				<dl class="clearfix">
+					<dt class="pt5">起始倍数：</dt>
+					<dd><p class="inputbox mr10"><span data-t="lostSetMul">－</span><span data-t="updateSetMul" id="plan_setMulObj"></span><span data-t="addSetMul">＋</span></p><span>倍</span></dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>预期盈利：</dt>
+					<dd>
+						<p class="mb10"><label data-t="setType" data-v="p"><em class="icon checkbox"></em>预期盈利率 <span class="linestyle fontblue" id="plan_setPercentObj" data-t="updateSetP">0</span> %</label></p>
+						<p><label data-t="setType" data-v="m"><em class="icon checkbox"></em>计划盈利 <span class="linestyle fontblue" data-t="updateSetM" id="plan_setMoneyObj">1000</span> 元</label></p>
+					</dd>
+				</dl>
+			</div>
+			<div class="keyboard key3" id="plan_keyObj" style="display:none;">
+				<ul>
+					<li>
+						<span><em data-t="k" data-v="1">1</em></span><span><em  data-t="k" data-v="2">2</em></span><span><em  data-t="k" data-v="3">3</em></span>
+					</li>
+					<li>
+						<span><em  data-t="k" data-v="4">4</em></span><span><em  data-t="k" data-v="5">5</em></span><span><em  data-t="k" data-v="6">6</em></span>
+					</li>
+					<li>
+						<span><em  data-t="k" data-v="7">7</em></span><span><em  data-t="k" data-v="8">8</em></span><span><em  data-t="k" data-v="9">9</em></span>
+					</li>
+					<li>
+						<span><em class="font18"  data-t="dk">←</em></span><span><em  data-t="k" data-v="0">0</em></span><span><em class="fontblue"  data-t="sk">确定</em></span>
+					</li>
+				</ul>
+			</div>
+			<p class="btn_simple">
+				<a href="javascript:void(0)" data-t="closeSet" class="w50"><span class="first">取消</span></a><a href="javascript:void(0);" data-t="subSet" class="w50"><span>确定</span></a>
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>登录</title>
+
+</head>
+
+<body class="log_bg">
+    <div class="wrapper log_bg" id="login_wrapperObj">
+        <header class="header r_header">
+			<p class="head_lf" id="login_backBtn" data-t="back"><a href="javascript:void(0);" class="backicon icon"></a></p>
+			<h3 class="head_cn">用户登录</h3>
+		</header>
+        <section class="centerWrap">
+            <p class="logo-aish">
+                <img src="images/wwzc.png" alt="旺旺中彩" title="旺旺中彩" style="border-radius:16px;">
+            </p>
+            <div class="login_wrap">
+                <div class="login_con r_input">
+                    <dl class="act_box r_input_l" style="border-radius: 40px;margin-bottom: 30px;">
+                        <span class="img_box input_img"><img src="images/login/icon_login_user.png"/></span>
+                		<input type="number" placeholder="请输入手机号码" value="" id="login_userNameObj">
+                    </dl>
+                    <li class="act_box r_input_l">
+                        <span class="img_box input_img"><img src="images/login/icon_login_Captcha.png"></span>
+                        <input name="sms_code" type="number" placeholder="请输入短信验证码" value="" id="register_smsCode">
+                        <span class="btn_yzm" data-t="updateMsg" id="regist_updateMsg">获取短信验证码</span> 
+                    </li>
+                    <!-- register_updateMsg  regist_updateMsg-->
+                    <!-- <dl class="act_box r_input_l" style="border-radius: 40px;margin-bottom: 30px;"> login_imgWrap
+                        <span class="img_box input_img"><img src="images/login/icon_login_password.png"/></span>
+                        <dd class="act_input pwd_dd l_pwd" id="login_pwdDivObj">
+                            <input type="password" placeholder="请输入密码" id="login_pwdA">
+                        </dd>
+                        <dd class="switch l_switch" id="login_showPwdObj"><em class="on l_on" style="display:none;"><img style="width:100%;" src="images/login/on_1.png"/></em><em id="login_switchObj" class="block l_block"></em><em class="off l_off"><img style="width:100%;" src="images/login/off.png"/></em></dd>
+                    </dl> -->
+
+                    <!-- <dl id="login_imgWrap" class="act_box" style="display: none;border-radius: 40px;margin-bottom: 30px;overflow: hidden;">
+                        <dt><em class="icon pwd"></em></dt> login_submitlogin
+                        <span class="img_box input_img"><img src="images/login/icon_login_Captcha.png"/></span>
+                        <dd style="margin-left: 30px;">
+                            <input type="text" placeholder="请输入图形验证码" value="" id="login_code">
+                        </dd> login_imgWrap
+                        <span class="pic_yzm" id="login_updateCode">
+                            <img title="点击切换验证码" src="" id="login_img" style="border-radius: 40px;margin-top:6px;">
+                        </span>
+                    </dl> -->
+                </div>
+                <div class="pwd_tip clearfix">
+                    <!--<p class="fr"><a href="#"><em class="icon qust_icon"></em>忘记密码</a></p>-->
+                </div>
+                <div class="center pt10 mb60" style="margin-bottom: 0;">
+                    <p class="mb20">
+                        <a style="border-radius: 40px;" href="javascript:void(0);" id="login_submitlogin" class="btn btn_big btn_login">登 录</a>
+                    </p>
+                    <p class="mb20"> 
+                        <a style="border-radius: 40px;display: inline-block;" href="javascript:void(0);" id="login_wxlogin" class="btn btn_big wechat_btn">微信登录</a>
+                    </p>
+                </div>
+                <!-- <p class="r_login" data-t="login"><a href="javascript:void(0);" id="login_regBtn">注册</a></p>
+                  <p class="r_login" id="login_findPwd" style="float: right;"><a href="javascript:void(0);" id="login_regBtn">忘记密码？</a></p>   -->  
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
