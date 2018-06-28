@@ -31,12 +31,10 @@
   //生成banner  lottery.schedule.getRecommendSchedule
   homeObj.createBanner = function () {
       var data = this.ajaxData.banner;
-      console.log(data)
       // if (!data.length) return;
       var imgHtml = [];
       var navHtml = [];
       data.forEach(function (v, i) {
-      	console.log(v)
           var url = v['picurl'];
           // var picur =  bannerImgObj
           // console.log(url) //detail
@@ -86,7 +84,6 @@
   //生成彩种dom
   homeObj.createLottery = function(){
     var data = homeObj.ajaxData.lottery;
- console.log(data);
     var html = [];
     for(var i=0;i<data.length;i++){   
     	var adId = data[i].add
@@ -312,7 +309,6 @@
 			  Global.openUrl(v);
           } else {
               var ret = parseSimpleUrl(v);
-				console.log(ret);  //页面跳转显示
 			if(ConfigObj.display){
 	            if (ret.path == '/sporttery/jczq') this.gotoJczqBet(); //竟足
 	            else if (ret.path == '/numlottery/dlt') this.gotoDltBet();  //大乐透
@@ -414,7 +410,6 @@
 	            else if (ret.path == 'news') homeObj.goNewsDetail(ret.args.newsId);
 	              // else if (ret.path == 'news') homeObj.goNewsDetail(ret.args.newsId); //原稿
 	            else Global.open(v);
-	            console.log(ret.args.newsId)
 	            
 	              // else this.lotteryHref(thisObj, 'banner');
 	          }
@@ -764,7 +759,6 @@
 					'para' : Global.encrypt(postData)
 			};
 			// console.log() system.FrontPage.getnewconf system.FrontPage.getnewconf
-			console.log(postData)
       Global.getDataPrefCache('?version=1&m=system.FrontPage.getnewconf', secretData, function (req) {
    	// console.log(766);
           updatePage(req);
@@ -786,12 +780,10 @@
 		 // $('#home_actCon').hide();
 	  }
 	  this.saveLocalData();
-	  console.log(754)
 
   }
   
   homeObj.saveLocalData = function(obj){
-  	console.log(obj)
 	  localStorage.setItem(ConfigObj.appName + '_topNews',$('#home_scrollBox').html());
 	  ConfigObj.lotteryAddPrize = homeObj.ajaxData.lotteryAddPrize;
 	  if(homeObj.ajaxData.lotteryAddPrize == undefined){
@@ -799,7 +791,6 @@
 	  	return;
 	  }
       localStorage.setItem('lotteryAddPrize', JSON.stringify(homeObj.ajaxData.lotteryAddPrize)); // 加奖数据
-      console.log(obj)
 	  // localStorage.setItem(ConfigObj.appName + '_botNews',$('#home_botNews').html());
   }
   
@@ -1091,12 +1082,10 @@ homeObj.buyA = function(obj){
 }
 
 homeObj.buyB = function(obj){
-	console.log(this.k_2)
 	if(!this.k_2){
 		$.alertMsg('请选择投注项');
 		return false;
 	}
-	console.log(this.secondMoney)
 	var matchOrder = obj.attr('data-v');
 	var matches = matchOrder+":1@"+this.k_2;
 	var data = {
@@ -1134,7 +1123,6 @@ homeObj.buyFun = function(obj){
 	
 	var postData = obj;
 	
-	console.log(postData);
 	postData.channel_number = ConfigObj.zdid;
 	var secretData = {
 		'para': Global.encrypt(postData),
@@ -1150,7 +1138,6 @@ homeObj.buyFun = function(obj){
 		type : "post",
 		success : function(obj){
 			
-			console.log(obj);
 			if(obj.code == '0000'){
 				obj.info = $.parseJSON(Global.crypt(obj.info));
 //				console.log('已经登录的情况下做单生成lotteryid', obj);
@@ -1196,7 +1183,6 @@ homeObj.selectOdds_2 = function(obj){
 	var odds_2 = obj.attr('data-v');
 	this.k_2 = obj.attr('data-k');
 	this.odds_2 = odds_2;
-	console.log(this.k_2)
 	$("#homeObj_rec dl").removeClass('on');
 	obj.attr('data-v',odds_2).addClass('on');
 	var bonus_2 = this.secondMoney * odds_2;
@@ -1415,7 +1401,6 @@ homeObj.getMatch = function(){
       dataType : "json",
       success : function(msg){
 //    	msg.info = $.parseJSON(Global.crypt(msg.info)); http://a.91zibo.com/api?
-   	console.log(msg)
       	self.lotteryNo = msg.info.lotteryNo;
       	self.lotteryType = msg.info.lotteryType;
       	homeObj.matchList(msg.info.matchList);
