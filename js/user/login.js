@@ -43,7 +43,6 @@
 
         console.log(userName)
         Global.post('?version=1&m=cashier.excep.ali_message', {mobile: userName,summary: 'register'}, function (req) {
-            console.log(req);
             if (req.code == '0000') $.alertMsg('短信验证码发送成功', true);
             else $.alertMsg(req.code_str);
 //socialAuthCallBack updateMsg
@@ -510,9 +509,7 @@ loginObj.goForward = function(){
           dataType: "json",
           success: function (obj) {
               if (obj.code == '0000') {
-                  console.log('[Login getUserInfo]token有效'); 
                   obj.info = $.parseJSON(Global.crypt(obj.info));
-                  console.log(obj.info)
                   loginObj.isLogin = true;
                   loginObj.userInfo = obj.info;
                   loginObj.userId = obj.info.user_id;   
@@ -524,7 +521,6 @@ loginObj.goForward = function(){
                   // console(loginObj.tokenWin(token))
                   loginObj.addScore('login'); //增加积分
                   loginObj.goForward();
-                  console.log(526)
                   // userCenterObj.show();
                   // return false;
                   if (fn && typeof fn == 'function') fn();
@@ -538,7 +534,6 @@ loginObj.goForward = function(){
               } else {
                 // alert(5)
                 // console.log(404) goForward user.account.login
-                  console.log('[Login getUserInfo]token失效');
                   loginObj.tokenFail();
               }
           },
