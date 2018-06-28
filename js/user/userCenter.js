@@ -483,7 +483,6 @@
         if (loginObj.userInfo) {
             var rs = userCenterObj.userInfo.real_status;
             var mb = userCenterObj.userInfo.is_mobile_bind;
-            console.log(rs);
             if (rs === 'Ing') {
                 $.alertMsg('您的实名认证正在审核中');
                 return false;
@@ -595,7 +594,6 @@
           			// localStorage.setItem("lastname", nam_Img);
 					var imgHtl = [];
         			var Img = localStorage.getItem("lastname")
-					console.log(Img)
 					imgHtl.push('<img class="back1-img" src="'+Img+'" alt="" />')
 					// console.log(imgHtl.push('<img class="back1-img" src="'+Img+'" alt="" />'))
 					$('#img_html').html(imgHtl.join(''))
@@ -737,7 +735,6 @@
 						'</p>'+
 					'</li>'*/;
 		this.wrapA.html(html);	
-		console.log(html)
 	}
 	
 	userCenterObj.formatHtmlB = function(obj){
@@ -849,7 +846,6 @@
 							'</p>'+
 						'</li>'*/;
 		$('#userCenter_wrapA').html(htmlA);
-		console.log(htmlA)
 		var htmlB = '<li data-t="launchType" data-v="dfk">'+
 						'<span  class="circle c0 "><em style="height:0%;margin-top:100%"></em><i >0</i></span>'+
 						'<span class="font12 gray">待付款</span>'+
