@@ -57,7 +57,6 @@ kaijiangIndexObj.goDetail = function (c) {
 
 kaijiangIndexObj.getData = function () {
     $.post(ConfigObj.localSite + '?version=1&m=lottery.prize.getInfo', function (data) {
-        console.log('开奖首页信息', data);
         
         if (data.code != '0000') return false;
         data.info = $.parseJSON(Global.crypt(data.info));
