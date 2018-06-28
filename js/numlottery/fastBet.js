@@ -359,7 +359,6 @@
 		this.qhObj.html(html);
 		// console.log(html) fastBet_qhObj
 	  }
-	console.log(ConfigObj.localSite + ConfigObj.fastLotApi[ConfigObj.fastLotType].scheme)
 	  fastBetObj.getLotteryData = function(tips){
 		$.ajax({
 		  url : ConfigObj.localSite + ConfigObj.fastLotApi[ConfigObj.fastLotType].scheme,
@@ -367,7 +366,6 @@
 		  type : "post",
 		  dataType : "json",
 		  success : function(msg){
-			console.log('体彩11选5期程',msg);
 			if(msg.code !== '0000'){
 			  $.alertMsg(msg.code_str);
 			  fastBetObj.getTimeObj = setTimeout(function(){
@@ -453,7 +451,6 @@
 			type : "post",
 			dataType : "json",
 			success : function(msg){
-				console.log(msg)
 			  if(msg.code !== "0000"){
 				$.alertMsg(msg.code_str);
 				fastBetObj.getCG(fastBetObj.updateLotteryCGInterval,type);
@@ -482,7 +479,6 @@
 	  fastBetObj.setData = function(data){
 		this.nowTime = data.nowTime;  //当前服务器时间戳
 		this.syTime = data.syTime;   //本期还剩多少秒
-		console.log(this.syTime)
 		this.lotteryNo = data.lotteryNo;
 	  }
 	
@@ -519,7 +515,6 @@
               // 只能在当前页弹出 fastBet_qhObj
               var apage = Global.getActivePage();
               if (apage.length && apage[0].id == 'fastBet') {
-              	console.log(1)
                   $.alertMsg("当前期已经结束，自动切换到可购买期");
               }
 
